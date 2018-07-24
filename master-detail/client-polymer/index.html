@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+  <link rel="import" href="bower_components/polymer/polymer.html">
+  <script src="bower_components/dolphin-platform-js/dist/dolphin-platform.js"></script>
+  <link rel="import" href="bower_components/paper-styles/color.html">
+  <link rel="import" href="bower_components/paper-styles/typography.html">
+  <link rel="import" href="workbench-view.html">
+
+  <script>
+    window.clientContext = window.platformClient.getService('ClientContextFactory').create("http://localhost:9000/dolphin");
+    window.clientContext.onConnect()
+      .then(function () {
+        console.log("Dolphin connected...");
+      })
+      .catch(function (error) {
+        console.log("error", error);
+      });
+  </script>
+
+  <custom-style>
+    <style is="custom-style">
+      body {
+        @apply --paper-font-common-base;
+        font-size: 14px;
+        margin: 0;
+        padding: 0px;
+        background-color: var(--paper-grey-50);
+      }
+      </style>
+  </custom-style>
+</head>
+<body>
+<workbench-view></workbench-view>
+</body>
+</html>

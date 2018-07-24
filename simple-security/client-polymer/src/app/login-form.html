@@ -1,0 +1,138 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+<link rel="import" href="../../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../../bower_components/paper-styles/color.html">
+
+<dom-module id="login-form">
+    <template>
+        <style is="custom-style">
+            :host [login-form] {
+                display: block;
+            }
+            :host [logout-form] {
+                display: none;
+            }
+            :host([authenticated]) [login-form] {
+                display: none;
+            }
+            :host([authenticated]) [logout-form] {
+                display: block;
+            }
+            iron-icon {
+                color: hsl(0, 0%, 50%);
+                margin-right: 12px;
+            }
+            paper-button {
+                font-family: 'Roboto', 'Noto', sans-serif;
+                font-weight: normal;
+                font-size: 14px;
+                -webkit-font-smoothing: antialiased;
+                background-color: var(--google-blue-500);
+                color: white;
+                --paper-button-raised-keyboard-focus: {
+                    background-color: var(--paper-pink-a200) !important;
+                    color: white !important;
+                };
+            }
+            [button-container] {
+                text-align: right;
+            }
+
+            :host([shake]) [login-form] {
+                animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+                transform: translate3d(0, 0, 0);
+                backface-visibility: hidden;
+                perspective: 1000px;
+            }
+
+            @keyframes shake {
+                10%, 90% {
+                    transform: translate3d(-1px, 0, 0);
+                }
+
+                20%, 80% {
+                    transform: translate3d(2px, 0, 0);
+                }
+
+                30%, 50%, 70% {
+                    transform: translate3d(-4px, 0, 0);
+                }
+
+                40%, 60% {
+                    transform: translate3d(4px, 0, 0);
+                }
+            }
+        </style>
+        <div login-form>
+            <paper-input label="Username" value="{{username}}">
+                <iron-icon icon="face" slot="prefix"></iron-icon>
+            </paper-input>
+            <paper-input label="Password" type="password" value="{{password}}">
+                <iron-icon icon="fingerprint" slot="prefix"></iron-icon>
+            </paper-input>
+            <div button-container>
+                <paper-button raised on-tap="login">Login</paper-button>
+            </div>
+        </div>
+        <div logout-form>
+            <div button-container>
+                <paper-button raised on-tap="logout">Logout</paper-button>
+            </div>
+        </div>
+    </template>
+
+    <script>
+        /**
+         * @customElement
+         * @polymer
+         */
+        class LoginForm extends Polymer.Element {
+            static get is() { return 'login-form'; }
+            static get properties() {
+                return {
+                    username: String,
+                    password: String,
+                    authEndpoint: String,
+                    authenticated: {
+                        type: Boolean,
+                        reflectToAttribute: true
+                    },
+                    shake: {
+                        type: Boolean,
+                        reflectToAttribute: true,
+                        value: false
+                    }
+                }
+            }
+            login() {
+                if (platformClient) {
+                    console.log(this.authEndpoint);
+                    const security = platformClient.getService('Security');
+                    const self = this;
+                    security.login(this.username, this.password, { authEndpoint: self.authEndpoint }).then(function() {
+                        self.authenticated = true;
+                        self.password = '';
+                    }).catch(function() {
+                        self.shake = true;
+                        setTimeout(function() {
+                            self.shake = false;
+                        }, 500);
+                    });
+                }
+            }
+            logout() {
+                if (platformClient) {
+                    const security = platformClient.getService('Security');
+                    const self = this;
+                    security.logout().then(function() {
+                        self.authenticated = false;
+                    });
+                }
+            }
+        }
+
+        window.customElements.define(LoginForm.is, LoginForm);
+    </script>
+</dom-module>

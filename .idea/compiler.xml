@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="distribution-client-javafx" />
+        <module name="distribution-common" />
+        <module name="distribution-server-external" />
+        <module name="distribution-server-hazelcast" />
+        <module name="distribution-server-spring-base" />
+        <module name="distribution-server-spring-i1" />
+        <module name="distribution-server-spring-i2" />
+        <module name="lazy-loading-client-javafx" />
+        <module name="lazy-loading-common" />
+        <module name="lazy-loading-server-spring" />
+        <module name="master-detail-client-polymer" />
+        <module name="master-detail-server-spring" />
+        <module name="microservices-server-spring-data1" />
+        <module name="microservices-server-spring-data2" />
+        <module name="process-monitor-client-angular" />
+        <module name="process-monitor-client-javafx" />
+        <module name="process-monitor-client-polymer" />
+        <module name="process-monitor-common" />
+        <module name="process-monitor-server-base" />
+        <module name="process-monitor-server-javaee" />
+        <module name="process-monitor-server-spring" />
+        <module name="reconnect-client-javafx" />
+        <module name="reconnect-common" />
+        <module name="reconnect-server-spring" />
+        <module name="remoting-microservices-client-javafx" />
+        <module name="remoting-microservices-common-data1" />
+        <module name="remoting-microservices-common-data2" />
+        <module name="remoting-security-client-javafx" />
+        <module name="remoting-security-common" />
+        <module name="remoting-security-server-spring" />
+        <module name="rss-reader-client-polymer" />
+        <module name="rss-reader-server-spring" />
+        <module name="simple-rest-client-java" />
+        <module name="simple-rest-client-javafx" />
+        <module name="simple-rest-common" />
+        <module name="simple-rest-server-javaee" />
+        <module name="simple-rest-server-spring" />
+        <module name="simple-security-client-javafx" />
+        <module name="simple-security-client-javascript" />
+        <module name="simple-security-client-polymer" />
+        <module name="simple-security-server-spring" />
+        <module name="todo-list-client-angular" />
+        <module name="todo-list-client-javafx" />
+        <module name="todo-list-client-polymer" />
+        <module name="todo-list-common" />
+        <module name="todo-list-server-base" />
+        <module name="todo-list-server-javaee" />
+        <module name="todo-list-server-spring" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="distribution" target="1.8" />
+      <module name="distribution-client-javafx" target="1.8" />
+      <module name="distribution-common" target="1.8" />
+      <module name="distribution-server-external" target="1.8" />
+      <module name="distribution-server-hazelcast" target="1.8" />
+      <module name="distribution-server-spring-base" target="1.8" />
+      <module name="distribution-server-spring-i1" target="1.8" />
+      <module name="distribution-server-spring-i2" target="1.8" />
+      <module name="dolphin-platform-examples" target="1.8" />
+      <module name="lazy-loading" target="1.8" />
+      <module name="lazy-loading-client-javafx" target="1.8" />
+      <module name="lazy-loading-common" target="1.8" />
+      <module name="lazy-loading-server-spring" target="1.8" />
+      <module name="master-detail" target="1.8" />
+      <module name="master-detail-client-polymer" target="1.8" />
+      <module name="master-detail-server-spring" target="1.8" />
+      <module name="microservices-server-spring-data1" target="1.8" />
+      <module name="microservices-server-spring-data2" target="1.8" />
+      <module name="process-monitor" target="1.8" />
+      <module name="process-monitor-client-angular" target="1.8" />
+      <module name="process-monitor-client-javafx" target="1.8" />
+      <module name="process-monitor-client-polymer" target="1.8" />
+      <module name="process-monitor-common" target="1.8" />
+      <module name="process-monitor-server-base" target="1.8" />
+      <module name="process-monitor-server-javaee" target="1.8" />
+      <module name="process-monitor-server-spring" target="1.8" />
+      <module name="reconnect" target="1.8" />
+      <module name="reconnect-client-javafx" target="1.8" />
+      <module name="reconnect-common" target="1.8" />
+      <module name="reconnect-server-spring" target="1.8" />
+      <module name="remoting-microservices" target="1.8" />
+      <module name="remoting-microservices-client-javafx" target="1.8" />
+      <module name="remoting-microservices-common-data1" target="1.8" />
+      <module name="remoting-microservices-common-data2" target="1.8" />
+      <module name="remoting-security" target="1.8" />
+      <module name="remoting-security-client-javafx" target="1.8" />
+      <module name="remoting-security-common" target="1.8" />
+      <module name="remoting-security-server-spring" target="1.8" />
+      <module name="rss-reader" target="1.8" />
+      <module name="rss-reader-client-polymer" target="1.8" />
+      <module name="rss-reader-server-spring" target="1.8" />
+      <module name="simple-rest" target="1.8" />
+      <module name="simple-rest-client-java" target="1.8" />
+      <module name="simple-rest-client-javafx" target="1.8" />
+      <module name="simple-rest-common" target="1.8" />
+      <module name="simple-rest-server-javaee" target="1.8" />
+      <module name="simple-rest-server-spring" target="1.8" />
+      <module name="simple-security" target="1.8" />
+      <module name="simple-security-client-javafx" target="1.8" />
+      <module name="simple-security-client-javascript" target="1.8" />
+      <module name="simple-security-client-polymer" target="1.8" />
+      <module name="simple-security-server-spring" target="1.8" />
+      <module name="todo-list" target="1.8" />
+      <module name="todo-list-client-angular" target="1.8" />
+      <module name="todo-list-client-javafx" target="1.8" />
+      <module name="todo-list-client-polymer" target="1.8" />
+      <module name="todo-list-common" target="1.8" />
+      <module name="todo-list-server-base" target="1.8" />
+      <module name="todo-list-server-javaee" target="1.8" />
+      <module name="todo-list-server-spring" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

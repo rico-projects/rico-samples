@@ -1,0 +1,236 @@
+<link rel="import" href="bower_components/polymer/polymer-element.html">
+<link rel="import" href="bower_components/polymer/lib/elements/dom-repeat.html">
+<link rel="import" href="bower_components/dolphin-platform-polymer/remoting-controller.html">
+
+<link rel="import" href="bower_components/paper-styles/element-styles/paper-material-styles.html">
+<link rel="import" href="bower_components/paper-item/paper-item.html">
+<link rel="import" href="bower_components/paper-item/paper-item-body.html">
+
+<link rel="import" href="bower_components/vaadin-charts/vaadin-chart.html">
+
+<dom-module id="process-view">
+  <template>
+    <custom-style>
+      <style is="custom-style" include="paper-material-styles"></style>
+    </custom-style>
+
+    <style>
+      paper-item .line-parent {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+      }
+
+      paper-item .bottom-border {
+        border-bottom: 1px solid lightgrey;
+      }
+
+      paper-item .bold {
+        font-weight: bold;
+      }
+
+      .pair {
+        display: flex;
+      }
+    </style>
+
+    <remoting-controller id="controller" name="ProcessMonitorController" model="{{model}}">
+    </remoting-controller>
+
+    <div class="layout center-justified">
+      <div class="pair">
+        <vaadin-chart id="cpu" title="CPU">
+        </vaadin-chart>
+        <vaadin-chart id="memory" title="Memory">
+        </vaadin-chart>
+      </div>
+      <div class="paper-material" elevation="4">
+        <template is="dom-repeat" items="[[model.items]]">
+          <paper-item>
+            <paper-item-body two-line class="bottom-border">
+              <div class="line-parent">
+                <div class="bold">[[item.name]]</div>
+                <div>[[item.processID]]</div>
+              </div>
+              <div class="line-parent" secondary>
+                <div>CPU in %: [[item.cpuPercentage]]</div>
+                <div>Memory in %: [[item.memoryPercentage]]</div>
+              </div>
+            </paper-item-body>
+          </paper-item>
+        </template>
+      </div>
+      <div>
+        <vaadin-chart id="chart" title="Monitor" subtitle="Everything is moving on ...">
+        </vaadin-chart>
+      </div>
+    </div>
+  </template>
+
+  <script>
+    class ProcessView extends Polymer.Element {
+      static get is() {
+        return "process-view";
+      }
+
+      static get properties() {
+          return {
+              model: {
+                  type: Object,
+                  notify: true
+              }
+          }
+      }
+      static get observers() {
+          return [
+              // Observer method name, followed by a list of dependencies, in parenthesis
+              'change(model.*)'
+          ]
+      }
+
+      mulitChart(items) {
+          if (!this.$.charts) {
+              this.$.charts = [];
+
+              for (let i = 0; i < items.length; i++) {
+                  const newSeries = document.createElement('vaadin-chart-series');
+                  newSeries.values = [];
+                  newSeries.type = 'areaspline';
+                  newSeries.id = 'chart-' + items[i].processID;
+                  newSeries.title = items[i].name;
+
+                  this.$.chart.appendChild(newSeries);
+                  this.$.charts.push(newSeries);
+
+              }
+          }
+
+          let update = true;
+
+          const lastUpdate =  this.$.lastUpdate;
+
+          if (lastUpdate) {
+              const now = new Date().getTime();
+              update =  now - lastUpdate > 250;
+          }
+
+          if (update) {
+
+              for (let i = 0; i < items.length; i++) {
+                  const value = parseFloat(items[i].cpuPercentage.replace(',', '.'));
+                  //console.log(this.data[i]);
+
+                  const chart = this.$.charts[i];
+
+                  chart.push('values', value);
+                  chart.set('title', items[i].name);
+                  if (chart.values.length >= 20) {
+                      chart.shift('values');
+                  }
+
+              }
+
+              this.$.lastUpdate = new Date().getTime();
+          }
+      }
+
+      cpuChart(items) {
+          if (!this.$.cpuChart) {
+
+              const newSeries = document.createElement('vaadin-chart-series');
+              newSeries.values = [];
+              newSeries.type = 'areaspline';
+              newSeries.id = 'cpu-chart';
+              newSeries.title = 'Usage';
+
+              this.$.cpu.appendChild(newSeries);
+              this.$.cpuChart = newSeries;
+
+          }
+
+          let update = true;
+
+          const lastUpdate =  this.$.lastUpdateCpu;
+
+          if (lastUpdate) {
+              const now = new Date().getTime();
+              update =  now - lastUpdate > 1000;
+          }
+
+          if (update) {
+              let currentValue = 0;
+              for (let i = 0; i < items.length; i++) {
+                  const value = parseFloat(items[i].cpuPercentage.replace(',', '.'));
+                  currentValue += value;
+
+              }
+
+              const chart = this.$.cpuChart;
+
+              chart.push('values', currentValue);
+              if (chart.values.length >= 20) {
+                  chart.shift('values');
+              }
+
+              this.$.lastUpdateCpu = new Date().getTime();
+          }
+      }
+
+      memChart(items) {
+          if (!this.$.memChart) {
+
+              const newSeries = document.createElement('vaadin-chart-series');
+              newSeries.values = [];
+              newSeries.type = 'areaspline';
+              newSeries.id = 'mem-chart';
+              newSeries.title = 'Usage';
+
+              this.$.memory.appendChild(newSeries);
+              this.$.memChart = newSeries;
+
+          }
+
+          let update = true;
+
+          const lastUpdate =  this.$.lastUpdateMem;
+
+          if (lastUpdate) {
+              const now = new Date().getTime();
+              update =  now - lastUpdate > 1000;
+          }
+
+          if (update) {
+              let currentValue = 0;
+              for (let i = 0; i < items.length; i++) {
+                  const value = parseFloat(items[i].memoryPercentage.replace(',', '.'));
+                  currentValue += value;
+
+              }
+
+              const chart = this.$.memChart;
+
+              chart.push('values', currentValue);
+              if (chart.values.length >= 20) {
+                  chart.shift('values');
+              }
+
+              this.$.lastUpdateMem = new Date().getTime();
+          }
+      }
+
+      change(changeRecord) {
+
+          const items = changeRecord.base.items;
+
+          this.cpuChart(items);
+          this.memChart(items);
+          this.mulitChart(items);
+
+
+      }
+    }
+
+    window.customElements.define(ProcessView.is, ProcessView);
+  </script>
+</dom-module>

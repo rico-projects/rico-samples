@@ -1,0 +1,18 @@
+{
+  "name": "process-monitor-client-polymer",
+  "dependencies": {
+    "dolphin-platform-polymer": "1.0.0-CR.5",
+    "font-roboto": "PolymerElements/font-roboto-local#^1.0.1",
+    "paper-item": "PolymerElements/paper-item#^2.0.0",
+    "paper-styles": "PolymerElements/paper-styles#^2.0.0",
+    "polymer": "^2.1.1",
+    "vaadin-charts": "vaadin/vaadin-charts#master"
+  },
+  "resolutions": {
+    "paper-item": "^2.0.0",
+    "paper-styles": "^2.0.0",
+    "polymer": "^2.1.1",
+    "webcomponentsjs": "^v1.0.2",
+    "vaadin-charts": "master"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "username": "user",
+  "enabled": true,
+  "emailVerified": true,
+  "credentials": [
+    {
+      "type":"password",
+      "value":"password",
+      "temporary":false
+    }
+  ]
+}

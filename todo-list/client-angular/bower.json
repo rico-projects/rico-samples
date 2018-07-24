@@ -1,0 +1,7 @@
+{
+  "name": "todo-client-angular",
+  "dependencies": {
+    "dolphin-platform-angularjs": "1.0.0-CR.5",
+    "bootstrap": "^3.3.7"
+  }
+}

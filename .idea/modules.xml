@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/distribution/distribution.iml" filepath="$PROJECT_DIR$/distribution/distribution.iml" />
+      <module fileurl="file://$PROJECT_DIR$/distribution/client-javafx/distribution-client-javafx.iml" filepath="$PROJECT_DIR$/distribution/client-javafx/distribution-client-javafx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/distribution/common/distribution-common.iml" filepath="$PROJECT_DIR$/distribution/common/distribution-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/distribution/server-external/distribution-server-external.iml" filepath="$PROJECT_DIR$/distribution/server-external/distribution-server-external.iml" />
+      <module fileurl="file://$PROJECT_DIR$/distribution/server-hazelcast/distribution-server-hazelcast.iml" filepath="$PROJECT_DIR$/distribution/server-hazelcast/distribution-server-hazelcast.iml" />
+      <module fileurl="file://$PROJECT_DIR$/distribution/server-spring-base/distribution-server-spring-base.iml" filepath="$PROJECT_DIR$/distribution/server-spring-base/distribution-server-spring-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/distribution/server-spring-i1/distribution-server-spring-i1.iml" filepath="$PROJECT_DIR$/distribution/server-spring-i1/distribution-server-spring-i1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/distribution/server-spring-i2/distribution-server-spring-i2.iml" filepath="$PROJECT_DIR$/distribution/server-spring-i2/distribution-server-spring-i2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dolphin-platform-examples.iml" filepath="$PROJECT_DIR$/dolphin-platform-examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lazy-loading/lazy-loading.iml" filepath="$PROJECT_DIR$/lazy-loading/lazy-loading.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lazy-loading/client-javafx/lazy-loading-client-javafx.iml" filepath="$PROJECT_DIR$/lazy-loading/client-javafx/lazy-loading-client-javafx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lazy-loading/common/lazy-loading-common.iml" filepath="$PROJECT_DIR$/lazy-loading/common/lazy-loading-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lazy-loading/server-spring/lazy-loading-server-spring.iml" filepath="$PROJECT_DIR$/lazy-loading/server-spring/lazy-loading-server-spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/master-detail/master-detail.iml" filepath="$PROJECT_DIR$/master-detail/master-detail.iml" />
+      <module fileurl="file://$PROJECT_DIR$/master-detail/client-polymer/master-detail-client-polymer.iml" filepath="$PROJECT_DIR$/master-detail/client-polymer/master-detail-client-polymer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/master-detail/server-spring/master-detail-server-spring.iml" filepath="$PROJECT_DIR$/master-detail/server-spring/master-detail-server-spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/remoting-microservices/server-spring-data1/microservices-server-spring-data1.iml" filepath="$PROJECT_DIR$/remoting-microservices/server-spring-data1/microservices-server-spring-data1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/remoting-microservices/server-spring-data2/microservices-server-spring-data2.iml" filepath="$PROJECT_DIR$/remoting-microservices/server-spring-data2/microservices-server-spring-data2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/process-monitor/process-monitor.iml" filepath="$PROJECT_DIR$/process-monitor/process-monitor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/process-monitor/client-angular/process-monitor-client-angular.iml" filepath="$PROJECT_DIR$/process-monitor/client-angular/process-monitor-client-angular.iml" />
+      <module fileurl="file://$PROJECT_DIR$/process-monitor/client-javafx/process-monitor-client-javafx.iml" filepath="$PROJECT_DIR$/process-monitor/client-javafx/process-monitor-client-javafx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/process-monitor/client-polymer/process-monitor-client-polymer.iml" filepath="$PROJECT_DIR$/process-monitor/client-polymer/process-monitor-client-polymer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/process-monitor/common/process-monitor-common.iml" filepath="$PROJECT_DIR$/process-monitor/common/process-monitor-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/process-monitor/server-base/process-monitor-server-base.iml" filepath="$PROJECT_DIR$/process-monitor/server-base/process-monitor-server-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/process-monitor/server-javaee/process-monitor-server-javaee.iml" filepath="$PROJECT_DIR$/process-monitor/server-javaee/process-monitor-server-javaee.iml" />
+      <module fileurl="file://$PROJECT_DIR$/process-monitor/server-spring/process-monitor-server-spring.iml" filepath="$PROJECT_DIR$/process-monitor/server-spring/process-monitor-server-spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reconnect/reconnect.iml" filepath="$PROJECT_DIR$/reconnect/reconnect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reconnect/client-javafx/reconnect-client-javafx.iml" filepath="$PROJECT_DIR$/reconnect/client-javafx/reconnect-client-javafx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reconnect/common/reconnect-common.iml" filepath="$PROJECT_DIR$/reconnect/common/reconnect-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reconnect/server-spring/reconnect-server-spring.iml" filepath="$PROJECT_DIR$/reconnect/server-spring/reconnect-server-spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/remoting-microservices/remoting-microservices.iml" filepath="$PROJECT_DIR$/remoting-microservices/remoting-microservices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/remoting-microservices/client-javafx/remoting-microservices-client-javafx.iml" filepath="$PROJECT_DIR$/remoting-microservices/client-javafx/remoting-microservices-client-javafx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/remoting-microservices/common-data1/remoting-microservices-common-data1.iml" filepath="$PROJECT_DIR$/remoting-microservices/common-data1/remoting-microservices-common-data1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/remoting-microservices/common-data2/remoting-microservices-common-data2.iml" filepath="$PROJECT_DIR$/remoting-microservices/common-data2/remoting-microservices-common-data2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/remoting-security/remoting-security.iml" filepath="$PROJECT_DIR$/remoting-security/remoting-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/remoting-security/client-javafx/remoting-security-client-javafx.iml" filepath="$PROJECT_DIR$/remoting-security/client-javafx/remoting-security-client-javafx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/remoting-security/common/remoting-security-common.iml" filepath="$PROJECT_DIR$/remoting-security/common/remoting-security-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/remoting-security/server-spring/remoting-security-server-spring.iml" filepath="$PROJECT_DIR$/remoting-security/server-spring/remoting-security-server-spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rss-reader/rss-reader.iml" filepath="$PROJECT_DIR$/rss-reader/rss-reader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rss-reader/client-polymer/rss-reader-client-polymer.iml" filepath="$PROJECT_DIR$/rss-reader/client-polymer/rss-reader-client-polymer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rss-reader/server-spring/rss-reader-server-spring.iml" filepath="$PROJECT_DIR$/rss-reader/server-spring/rss-reader-server-spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simple-rest/simple-rest.iml" filepath="$PROJECT_DIR$/simple-rest/simple-rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simple-rest/client-java/simple-rest-client-java.iml" filepath="$PROJECT_DIR$/simple-rest/client-java/simple-rest-client-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simple-rest/client-javafx/simple-rest-client-javafx.iml" filepath="$PROJECT_DIR$/simple-rest/client-javafx/simple-rest-client-javafx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simple-rest/common/simple-rest-common.iml" filepath="$PROJECT_DIR$/simple-rest/common/simple-rest-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simple-rest/server-javaee/simple-rest-server-javaee.iml" filepath="$PROJECT_DIR$/simple-rest/server-javaee/simple-rest-server-javaee.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simple-rest/server-spring/simple-rest-server-spring.iml" filepath="$PROJECT_DIR$/simple-rest/server-spring/simple-rest-server-spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simple-security/simple-security.iml" filepath="$PROJECT_DIR$/simple-security/simple-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simple-security/client-javafx/simple-security-client-javafx.iml" filepath="$PROJECT_DIR$/simple-security/client-javafx/simple-security-client-javafx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simple-security/client-javascript/simple-security-client-javascript.iml" filepath="$PROJECT_DIR$/simple-security/client-javascript/simple-security-client-javascript.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simple-security/client-polymer/simple-security-client-polymer.iml" filepath="$PROJECT_DIR$/simple-security/client-polymer/simple-security-client-polymer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simple-security/server-spring/simple-security-server-spring.iml" filepath="$PROJECT_DIR$/simple-security/server-spring/simple-security-server-spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/todo-list/todo-list.iml" filepath="$PROJECT_DIR$/todo-list/todo-list.iml" />
+      <module fileurl="file://$PROJECT_DIR$/todo-list/client-angular/todo-list-client-angular.iml" filepath="$PROJECT_DIR$/todo-list/client-angular/todo-list-client-angular.iml" />
+      <module fileurl="file://$PROJECT_DIR$/todo-list/client-javafx/todo-list-client-javafx.iml" filepath="$PROJECT_DIR$/todo-list/client-javafx/todo-list-client-javafx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/todo-list/client-polymer/todo-list-client-polymer.iml" filepath="$PROJECT_DIR$/todo-list/client-polymer/todo-list-client-polymer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/todo-list/common/todo-list-common.iml" filepath="$PROJECT_DIR$/todo-list/common/todo-list-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/todo-list/server-base/todo-list-server-base.iml" filepath="$PROJECT_DIR$/todo-list/server-base/todo-list-server-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/todo-list/server-javaee/todo-list-server-javaee.iml" filepath="$PROJECT_DIR$/todo-list/server-javaee/todo-list-server-javaee.iml" />
+      <module fileurl="file://$PROJECT_DIR$/todo-list/server-spring/todo-list-server-spring.iml" filepath="$PROJECT_DIR$/todo-list/server-spring/todo-list-server-spring.iml" />
+    </modules>
+  </component>
+</project>
