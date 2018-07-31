@@ -1,7 +1,0 @@
-{
-  "name": "simple-security-client-javascript",
-  "dependencies": {
-    "dolphin-platform-js": "1.0.0-CR.5",
-    "bootstrap": "4.0.0"
-  }
-}

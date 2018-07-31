@@ -15,8 +15,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.canoo.dolphin-platform</groupId>
-            <artifactId>dolphin-platform-remoting-common</artifactId>
+            <groupId>dev.rico</groupId>
+            <artifactId>rico-remoting-common</artifactId>
             <version>${rico.version}</version>
         </dependency>
     </dependencies>

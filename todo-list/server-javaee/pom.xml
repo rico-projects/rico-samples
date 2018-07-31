@@ -25,8 +25,8 @@
             <version>${version}</version>
         </dependency>
         <dependency>
-            <groupId>com.canoo.dolphin-platform</groupId>
-            <artifactId>dolphin-platform-remoting-server-javaee</artifactId>
+            <groupId>dev.rico</groupId>
+            <artifactId>rico-remoting-server-javaee</artifactId>
             <version>${rico.version}</version>
         </dependency>
         <dependency>

@@ -20,8 +20,8 @@
             <version>${version}</version>
         </dependency>
         <dependency>
-            <groupId>com.canoo.dolphin-platform</groupId>
-            <artifactId>dolphin-platform-remoting-server</artifactId>
+            <groupId>dev.rico</groupId>
+            <artifactId>rico-remoting-server</artifactId>
             <version>${rico.version}</version>
         </dependency>
         <dependency>

@@ -6,7 +6,7 @@
 
     <parent>
         <groupId>dev.rico.samples</groupId>
-        <artifactId>rico-examples</artifactId>
+        <artifactId>rico-samples</artifactId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../</relativePath>
     </parent>

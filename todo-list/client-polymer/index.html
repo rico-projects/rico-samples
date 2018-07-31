@@ -6,7 +6,7 @@
   <meta name="description" content="">
 
   <script src="bower_components/webcomponentsjs/webcomponents-loader.js"></script>
-  <script src="bower_components/dolphin-platform-js/dist/dolphin-platform.js"></script>
+  <script src="bower_components/rico-js/dist/rico.js"></script>
 
   <link rel="import" href="bower_components/font-roboto/roboto.html">
   <link rel="import" href="bower_components/paper-styles/paper-styles.html">
@@ -28,10 +28,10 @@
       return factory.create(url, config);
     }
 
-    window.clientContext = createClientContext("http://localhost:8080/todo-app/dolphin");
+    window.clientContext = createClientContext("http://localhost:8080/todo-app/remoting");
     window.clientContext.onConnect()
       .then(function () {
-        console.log("Dolphin connected...");
+        console.log("Rico remoting connected...");
       })
       .catch(function (error) {
         console.log("error", error);

@@ -7,13 +7,13 @@
 
 
 <!-- Dolphin-Platform  -->
-<script src="bower_components/dolphin-platform-angularjs/dist/dolphin-platform-angular.min.js"></script>
+<script src="bower_components/rico-angularjs/dist/rico-angular.min.js"></script>
 
 <body>
 <script>
-    var app = angular.module('MyApplication', ['DolphinPlatform']).config(function ($dolphinConfigProvider) {
-        $dolphinConfigProvider.configure({
-            DOLPHIN_URL: 'http://localhost:8080/todo-app/dolphin'
+    var app = angular.module('MyApplication', ['Rico']).config(function ($ricoConfigProvider) {
+        $ricoConfigProvider.configure({
+            REMOTING_URL: 'http://localhost:8080/todo-app/remoting'
         });
     });
 </script>
