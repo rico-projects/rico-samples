@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="simple-security-client-javascript:war">
-    <output-path>$PROJECT_DIR$/simple-security/client-javascript/target</output-path>
-    <root id="archive" name="simple-security-client-javascript-1.0-SNAPSHOT.war">
-      <element id="artifact" artifact-name="simple-security-client-javascript:war exploded" />
-    </root>
-  </artifact>
-</component>
