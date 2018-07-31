@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="simple-security-client-polymer:war">
+    <output-path>$PROJECT_DIR$/simple-security/client-polymer/target</output-path>
+    <root id="archive" name="simple-security-client-polymer-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="simple-security-client-polymer:war exploded" />
+    </root>
+  </artifact>
+</component>

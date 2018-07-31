@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/distribution" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/distribution/client-javafx" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/distribution/common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/distribution/server-external" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/distribution/server-hazelcast" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/distribution/server-spring-base" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/distribution/server-spring-i1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/distribution/server-spring-i2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lazy-loading" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lazy-loading/client-javafx" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lazy-loading/common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lazy-loading/server-spring" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/master-detail" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/master-detail/client-polymer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/master-detail/server-spring" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/process-monitor" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/process-monitor/client-angular" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/process-monitor/client-javafx" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/process-monitor/client-polymer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/process-monitor/common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/process-monitor/server-base" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/process-monitor/server-javaee" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/process-monitor/server-spring" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/reconnect" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/reconnect/client-javafx" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/reconnect/common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/reconnect/server-spring" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/remoting-microservices" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/remoting-microservices/client-javafx" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/remoting-microservices/common-data1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/remoting-microservices/common-data2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/remoting-microservices/server-spring-data1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/remoting-microservices/server-spring-data2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/remoting-security" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/remoting-security/client-javafx" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/remoting-security/common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/remoting-security/server-spring" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rss-reader" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rss-reader/client-polymer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rss-reader/server-spring" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/simple-rest" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/simple-rest/client-java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/simple-rest/client-javafx" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/simple-rest/common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/simple-rest/server-javaee" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/simple-rest/server-spring" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/simple-security" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/simple-security/client-javafx" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/simple-security/client-javascript" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/simple-security/client-polymer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/simple-security/server-spring" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/todo-list" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/todo-list/client-angular" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/todo-list/client-javafx" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/todo-list/client-polymer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/todo-list/common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/todo-list/server-base" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/todo-list/server-javaee" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/todo-list/server-spring" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,7 @@
+{
+  "name": "todo-client-angular",
+  "dependencies": {
+    "rico-angularjs": "https://github.com/rico-project/rico-angularjs.git#master",
+    "bootstrap": "^3.3.7"
+  }
+}
