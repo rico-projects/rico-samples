@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Dolphin-Platform  -->
+    <script src="bower_components/rico-js/dist/rico.min.js"></script>
+
+</head>
+
+
+<body>
+    <h1>simple-security-client-javascript</h1>
+    <script>
+        // Get the HTTP client from the Dolpin Platform
+        var httpClient = client.getService("HttpClient");
+
+        // Access an unsecure REST endpoint
+        httpClient.get("http://localhost:8080/api/message").withoutContent().readString().execute().then(function(result) {
+            var div = document.createElement("div");
+            var text = document.createTextNode(result.content);
+            div.appendChild(text);
+            document.body.appendChild(div);
+        });
+
+        // Get the Security service from the Dolpin Platform
+        var security = client.getService("Security");
+
+        // Login
+        security.login("user", "password", { authEndpoint: 'http://localhost:8080/openid-connect'}).then(function() {
+
+            // Access an secure REST endpoint
+            httpClient.get("http://localhost:8080/api/secure/message").withoutContent().readString().execute().then(function(result) {
+                var div = document.createElement("div");
+                var text = document.createTextNode(result.content);
+                div.appendChild(text);
+                document.body.appendChild(div);
+            });
+        });
+    </script>
+</body>
+</html>
+

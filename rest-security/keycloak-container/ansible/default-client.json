@@ -1,0 +1,11 @@
+{
+  "clientId": "rico-client",
+  "name": "Default Rico Client",
+  "description": "The default client for Rico",
+  "enabled":true,
+  "directAccessGrantsEnabled": true,
+  "publicClient": true,
+  "bearerOnly": false,
+  "redirectUris": ["/*"],
+  "webOrigins": ["*"]
+}

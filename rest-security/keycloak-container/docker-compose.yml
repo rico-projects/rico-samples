@@ -1,0 +1,8 @@
+version: "3"
+services:
+
+  platform-security-sample-keycloak-server:
+    build: .
+    ports:
+      - "8081:8080"
+

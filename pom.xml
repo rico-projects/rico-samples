@@ -13,7 +13,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.compiler.source>1.8</maven.compiler.source>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <rico.version>1.0.0-CR1</rico.version>
+        <rico.version>1.0.0-SNAPSHOT</rico.version>
     </properties>
 
     <repositories>
@@ -21,10 +21,17 @@
             <id>jcenter</id>
             <url>https://jcenter.bintray.com/</url>
         </repository>
+        <repository>
+            <id>snapshots</id>
+            <snapshots></snapshots>
+            <name>oss-jfrog-artifactory-snapshots</name>
+            <url>https://oss.jfrog.org/artifactory/oss-snapshot-local</url>
+        </repository>
     </repositories>
 
     <modules>
         <module>todo-list</module>
+        <module>rest-security</module>
     </modules>
 
 </project>
