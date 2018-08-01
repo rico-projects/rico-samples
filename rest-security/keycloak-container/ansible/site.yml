@@ -30,7 +30,7 @@
       retries: 600
       delay: 2
 
-    - name: "Create rico realm"
+    - name: "Create realm"
       uri:
         url: "http://localhost:8080/auth/admin/realms"
         method: POST
@@ -41,9 +41,9 @@
           Authorization: "bearer {{ keycloak_auth_response.json.access_token }}"
         status_code: 201
 
-    - name: "Create default-bearer client in rico realm"
+    - name: "Create client in realm"
       uri:
-        url: "http://localhost:8080/auth/admin/realms/rico-realm/clients"
+        url: "http://localhost:8080/auth/admin/realms/{{ lookup('file','default-realm.json') | from_json | json_query('realm') }}/clients"
         method: POST
         body: "{{ lookup('file','default-client.json') }}"
         validate_certs: no
@@ -52,9 +52,9 @@
           Authorization: "bearer {{ keycloak_auth_response.json.access_token }}"
         status_code: 201
 
-    - name: "Create user in rico realm"
+    - name: "Create user in realm"
       uri:
-        url: "http://localhost:8080/auth/admin/realms/rico-realm/users"
+        url: "http://localhost:8080/auth/admin/realms/{{ lookup('file','default-realm.json') | from_json | json_query('realm') }}/users"
         method: POST
         body: "{{ lookup('file','default-user.json') }}"
         validate_certs: no
