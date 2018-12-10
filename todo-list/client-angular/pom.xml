@@ -12,6 +12,7 @@
     </parent>
 
     <artifactId>todo-list-client-angular</artifactId>
+    <packaging>war</packaging>
 
     <build>
         <plugins>
