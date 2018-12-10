@@ -1,0 +1,52 @@
+= Rico: Todo List Sample Application
+
+== Prerequisites
+
+You need to have the following things installed:
+
+* an Java SDK (tested with Java 8)
+* Maven
+
+== How to run
+
+First, you need to have everthing compiled, so please run `mvn install` in the root directory of this samples project.
+
+=== Start a Server
+
+==== Spring
+
+Go to the 'server-spring' subfolder and use maven to start the server:
+
+`mvn spring-boot:run` 
+
+==== Java EE
+
+TODO
+
+=== Start a client
+
+
+==== JavaFx
+
+
+
+==== AngularJS
+
+Jetty-Maven-Plugin is preconfigured to serve the client, just start
+
+```
+mvn jetty:run
+```
+
+After this, you can access the sample via `http://localhost:8081`
+
+==== Polymer
+
+Jetty-Maven-Plugin is preconfigured to serve the client, just start
+
+```
+mvn jetty:run
+```
+
+After this, you can access the sample via `http://localhost:8082`
+

@@ -1,0 +1,16 @@
+= Rico Samples
+
+This repository conains a set of sample applications to demonstrate how to use Rico.
+
+It consits of two main applications, a todo-list and and example for rest security.
+
+
+== How to run
+
+First, you need to have everything compiled, so please run `mvn install` in the root directory of this samples project.
+After that, please refer to one of the sub-projects README files.
+
+== REST Security
+
+
+== Todo List
