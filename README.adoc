@@ -10,7 +10,10 @@ It consits of two main applications, a todo-list and and example for rest securi
 First, you need to have everything compiled, so please run `mvn install` in the root directory of this samples project.
 After that, please refer to one of the sub-projects README files.
 
+== Todo List
+This sample show some common usecases for the remoting API by providing a server based todo list that can be shared between several clients. You can finf more information about the sample link:todo-list[here].
+
+
 == REST Security
 
 
-== Todo List
