@@ -12,8 +12,7 @@
     </parent>
 
     <artifactId>simple-security-client-javascript</artifactId>
-
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
 
     <build>
         <plugins>

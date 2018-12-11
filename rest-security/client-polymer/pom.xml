@@ -12,8 +12,7 @@
     </parent>
 
     <artifactId>simple-security-client-polymer</artifactId>
-
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
 
     <properties>
         <failOnMissingWebXml>false</failOnMissingWebXml>
