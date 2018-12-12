@@ -11,7 +11,10 @@ First, you need to have everything compiled, so please run `mvn install` in the 
 After that, please refer to one of the sub-projects README files.
 
 == Todo List
-This sample show some common usecases for the remoting API by providing a server based todo list that can be shared between several clients. You can finf more information about the sample link:todo-list[here].
+
+This sample shows some common usecases for the remoting API by providing a server based todo list that can be shared between several clients. 
+
+You can find more information about the sample link:todo-list[in the subdirectory].
 
 
 == REST Security
