@@ -19,4 +19,7 @@ You can find more information about the sample link:todo-list[in the subdirector
 
 == REST Security
 
+This sample shows how the security API of Rico can be used to secure endpoints on
+the server and easily login as a client.
 
+You can find more information about the sample link:rest-security[in the subdirectory].
