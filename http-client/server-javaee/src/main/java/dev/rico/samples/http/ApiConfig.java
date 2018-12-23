@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.canoo.dolphin.samples.rest;
+package dev.rico.samples.http;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;

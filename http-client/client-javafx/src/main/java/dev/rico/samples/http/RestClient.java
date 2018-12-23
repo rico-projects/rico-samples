@@ -1,24 +1,9 @@
-/*
- * Copyright 2015-2018 Canoo Engineering AG.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-package com.canoo.dolphin.samples.rest;
+package dev.rico.samples.http;
 
-import com.canoo.platform.client.PlatformClient;
-import com.canoo.platform.client.javafx.FxToolkit;
-import com.canoo.platform.core.http.HttpClient;
-import com.canoo.platform.core.http.RequestMethod;
+import dev.rico.client.Client;
+import dev.rico.client.FxToolkit;
+import dev.rico.core.http.HttpClient;
+import dev.rico.core.http.RequestMethod;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
@@ -33,13 +18,13 @@ public class RestClient extends Application {
     @Override
     public void init() throws Exception {
         super.init();
-        PlatformClient.init(new FxToolkit());
+        Client.init(new FxToolkit());
     }
 
     @Override
     public void start(Stage primaryStage) throws Exception {
         final String endpoint = "http://localhost:8080/simple-rest/api/city";
-        final HttpClient httpClient = PlatformClient.getService(HttpClient.class);
+        final HttpClient httpClient = Client.getService(HttpClient.class);
 
         final TextField cityField = new TextField();
         cityField.setPromptText("Enter city name");

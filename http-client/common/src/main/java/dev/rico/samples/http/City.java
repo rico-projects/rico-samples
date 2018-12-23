@@ -13,15 +13,37 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.canoo.dolphin.samples.rest;
+package dev.rico.samples.http;
 
-import com.canoo.platform.server.spring.DolphinPlatformApplication;
-import org.springframework.boot.SpringApplication;
+import java.io.Serializable;
 
-@DolphinPlatformApplication
-public class ServerApplication {
+public class City implements Serializable {
 
-    public static void main(final String[] args) {
-        SpringApplication.run(ServerApplication.class);
+    private String name;
+
+    private String country;
+
+    public City() {
+    }
+
+    public City(String name, String country) {
+        this.name = name;
+        this.country = country;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
     }
 }
