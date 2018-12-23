@@ -1,0 +1,49 @@
+= Rico: Http Sample Application
+
+This sample shows how the HTTP client of Rico can be used.
+
+
+== Prerequisites
+
+You need to have the following things installed:
+
+* an Java SDK (tested with Java 8)
+* Maven
+
+== How to run
+
+First, you need to have everthing compiled, so please run `mvn install` in the root directory of this samples project.
+
+Before starting any client at least 1 server must be started.
+Since the spring and the JavaEE server both use the same port you can not start both servers in parallel.
+
+=== Start a Server
+
+==== Spring
+
+Go to the 'server-spring' subfolder and use maven to start the server:
+
+`mvn spring-boot:run`
+
+==== Java EE
+
+To start the JavaEE server simply run `mvn wildfly:run` from the server-javaee folder.
+
+Next to this the server can be deployed to any JavaEE 6 application server.
+To do so run `mvn verify` from the server-javaee folder.
+The created `todo-app.war` in the target folder can be deployed as JavaEE web application.
+In that case the application must be reachable under `http://localhost:8080/simple-rest`.
+
+=== Start a client
+
+
+==== Java
+
+To start the JavaFX client simply run `mvn jfx:run` from the client-javafx folder.
+Next to this the client can be started by the `dev.rico.samples.http.RestClient` class.
+
+
+==== JavaFx
+
+To start the JavaFX client simply run `mvn jfx:run` from the client-javafx folder.
+Next to this the client can be started by the `dev.rico.samples.http.RestClient` class.
