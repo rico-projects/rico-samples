@@ -1,0 +1,8 @@
+{
+  "name": "todo-list-client-angular",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "bower": "1.8.2"
+  },
+  "dependencies": {}
+}
