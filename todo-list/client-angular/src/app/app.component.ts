@@ -1,4 +1,4 @@
-import { Component, ApplicationRef } from '@angular/core';
+import { Component, ApplicationRef, OnInit } from '@angular/core';
 import { RicoService } from 'rico-angular';
 import { ControllerProxy } from 'rico-angular/lib/controller-proxy';
 

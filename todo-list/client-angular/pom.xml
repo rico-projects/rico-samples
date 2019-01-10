@@ -11,7 +11,7 @@
         <relativePath>../</relativePath>
     </parent>
 
-    <artifactId>todo-list-client-angularjs</artifactId>
+    <artifactId>todo-list-client-angular</artifactId>
     <packaging>war</packaging>
 
     <build>
@@ -34,15 +34,18 @@
                         </goals>
                     </execution>
                     <execution>
-                        <id>bower install</id>
+                        <id>npm run build</id>
                         <goals>
-                            <goal>bower</goal>
+                            <goal>npm</goal>
                         </goals>
+                        <configuration>
+                            <arguments>run build</arguments>
+                        </configuration>
                     </execution>
                 </executions>
                 <configuration>
-                    <nodeVersion>v4.6.0</nodeVersion>
-                    <npmVersion>2.15.9</npmVersion>
+                    <nodeVersion>v10.13.0</nodeVersion>
+                    <npmVersion>6.5.0</npmVersion>
                 </configuration>
             </plugin>
             <plugin>
@@ -50,9 +53,9 @@
                 <artifactId>jetty-maven-plugin</artifactId>
                 <version>9.4.14.v20181114</version>
                 <configuration>
-                    <webAppSourceDirectory>${project.basedir}/</webAppSourceDirectory>
+                    <webAppSourceDirectory>${project.basedir}/dist/rico-angular-demo-app/</webAppSourceDirectory>
                     <httpConnector>
-                        <port>8081</port>
+                        <port>8083</port>
                     </httpConnector>
                 </configuration>
             </plugin>
@@ -73,7 +76,7 @@
                             <directory>${basedir}</directory>
                             <followSymlinks>false</followSymlinks>
                             <includes>
-                                <include>bower_components/</include>
+                                <include>dist/</include>
                                 <include>etc/</include>
                                 <include>node/</include>
                                 <include>node_modules/</include>
