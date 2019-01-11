@@ -14,7 +14,7 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-8">
-            <input type="text" [(ngModel)]="model.newItemText" class="form-control" placeholder="Task"> 
+            <input type="text" [(ngModel)]="model.newItemText" (keyup.enter)="addTask()" class="form-control" placeholder="Task">
         </div>
  
         <div class="col-xs-4">
