@@ -44,8 +44,8 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <nodeVersion>v10.13.0</nodeVersion>
-                    <npmVersion>6.5.0</npmVersion>
+                    <nodeVersion>v10.15.0</nodeVersion>
+                    <npmVersion>6.4.1</npmVersion>
                 </configuration>
             </plugin>
             <plugin>
