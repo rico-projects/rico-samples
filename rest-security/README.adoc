@@ -20,25 +20,25 @@ You need to have the following things installed:
 
 * an Java SDK (tested with Java 8)
 * Maven
-* Docker (and docker-compose)
+* Docker (and Docker Compose)
 
 == How to run
 
 First, you need to have everthing compiled, so please run `mvn install` in the root directory of this samples project.
 
 To use the security features a Keycloak instance must be configured and started.
-The easiest way is to use the docker based Keycloak container that is provided
+The easiest way is to use the Docker based Keycloak container that is provided
 as part of this sample. If you have installed Docker on your machine everything
 else that is needed to start an automatically configured Keycloak server can
 be found in the `keycloak-container` folder of this sample.
 
-The folder contains several scripts that can be used to the build, start & remove the Keycloak docker container. To run the scripts docker (and docker-compose) must be installed locally. The folder contains 2 scripts:
+The folder contains several scripts that can be used to the build, start & remove the Keycloak Docker container. To run the scripts Docker (and Docker Compose) must be installed locally. The folder contains 2 scripts:
 
-* `clearDocker` - This script removes the container from your local docker registry. The script can be used to clear everything if you do not want to use the keycloak container anymore.
+* `clearDocker` - This script removes the container from your local Docker registry. The script can be used to clear everything if you do not want to use the keycloak container anymore.
 
-* `restart` -  This script stops and removes the keycloak docker container if it is present. After that the container is created and started.
+* `restart` -  This script stops and removes the Keycloak Docker container if it is present. After that the container is created and started.
 
-Once you have checked out the repository you only need to call the restart script from the keycloak-container folder and the docker container will be created and started. Since this will download keycloak and do several configuration steps this can take some minutes. The server is up and running once you see the following message in the log:
+Once you have checked out the repository you only need to call the restart script from the `keycloak-container` folder and the Docker container will be created and started. Since this will download keycloak and do several configuration steps this can take some minutes. The server is up and running once you see the following message in the log:
 
 ```
 Keycloak 3.4.0.Final (WildFly Core 3.0.1.Final) started in 14189ms - Started 523 of 845 services (568 services are lazy, passive or on-demand)
@@ -46,7 +46,7 @@ Keycloak 3.4.0.Final (WildFly Core 3.0.1.Final) started in 14189ms - Started 523
 
 === Start a Server
 
-Go to the 'server-spring' subfolder and use maven to start the server:
+Go to the `server-spring` subfolder and use maven to start the server:
 
 `mvn spring-boot:run`
 
@@ -54,8 +54,8 @@ Go to the 'server-spring' subfolder and use maven to start the server:
 
 ==== Java client
 
-To start the JavaFX client simply run `mvn jfx:run` from the client-javafx folder.
-Next to this the client can be started by the dev.rico.samples.security.Client class.
+To start the JavaFX client simply run `mvn jfx:run` from the `client-javafx` folder.
+Next to this the client can be started by the `dev.rico.samples.security.Client` class.
 
 ==== Plan JavaScript client
 
