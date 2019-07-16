@@ -10,6 +10,12 @@ It consits of two main applications, a todo-list and and example for rest securi
 First, you need to have everything compiled, so please run `mvn install` in the root directory of this samples project.
 After that, please refer to one of the sub-projects README files.
 
+== Http client
+
+This sample shows how the http client of Rico can be used
+
+You can find more information about the sample link:http-client[in the subdirectory].
+
 == Todo List
 
 This sample shows some common usecases for the remoting API by providing a server based todo list that can be shared between several clients. 
