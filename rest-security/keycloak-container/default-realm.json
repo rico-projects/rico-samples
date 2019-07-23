@@ -15,24 +15,6 @@
           "temporary": false
         }
       ]
-    },
-    {
-      "username": "user-tenant1",
-      "enabled": true,
-      "credentials": [
-        {
-          "type": "password",
-          "value": "user-tenant1"
-        }
-      ],
-      "realmRoles": [
-        "user"
-      ],
-      "clientRoles": {
-        "multi-tenant": [
-          "user"
-        ]
-      }
     }
   ],
   "roles": {
@@ -52,16 +34,6 @@
     }
   ],
   "clients": [
-    {
-      "clientId": "multi-tenant",
-      "enabled": true,
-      "adminUrl": "/multitenant/tenant1",
-      "baseUrl": "/multitenant/tenant1",
-      "redirectUris": [
-        "/multitenant/tenant1/*"
-      ],
-      "secret": "password"
-    },
     {
       "clientId": "rico-client",
       "name": "Default Rico Client",
