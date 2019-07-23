@@ -1,4 +1,5 @@
 /*
+ * Copyright 2018-2019 Karakun AG.
  * Copyright 2015-2018 Canoo Engineering AG.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +16,6 @@
  */
 package dev.rico.samples.todo.server;
 
-import dev.rico.samples.todo.server.TodoItemStore;
 import dev.rico.server.remoting.event.RemotingEventBus;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Bean;

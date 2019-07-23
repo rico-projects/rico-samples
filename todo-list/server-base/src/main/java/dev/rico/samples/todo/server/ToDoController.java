@@ -1,4 +1,5 @@
 /*
+ * Copyright 2018-2019 Karakun AG.
  * Copyright 2015-2018 Canoo Engineering AG.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,10 +16,10 @@
  */
 package dev.rico.samples.todo.server;
 
-import dev.rico.samples.todo.ToDoItem;
-import dev.rico.samples.todo.ToDoList;
 import dev.rico.core.functional.Subscription;
 import dev.rico.remoting.BeanManager;
+import dev.rico.samples.todo.ToDoItem;
+import dev.rico.samples.todo.ToDoList;
 import dev.rico.server.remoting.Param;
 import dev.rico.server.remoting.RemotingAction;
 import dev.rico.server.remoting.RemotingController;

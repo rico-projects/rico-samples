@@ -1,4 +1,5 @@
 /*
+ * Copyright 2018-2019 Karakun AG.
  * Copyright 2015-2018 Canoo Engineering AG.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,16 +16,19 @@
  */
 package dev.rico.samples.todo.server;
 
-import dev.rico.samples.todo.ToDoList;
-
 import dev.rico.client.remoting.Param;
+import dev.rico.samples.todo.ToDoList;
 import dev.rico.server.remoting.test.ControllerUnderTest;
 import dev.rico.server.remoting.test.SpringTestNGControllerTest;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import static dev.rico.samples.todo.TodoAppConstants.*;
+import static dev.rico.samples.todo.TodoAppConstants.ADD_ACTION;
+import static dev.rico.samples.todo.TodoAppConstants.CHANGE_ACTION;
+import static dev.rico.samples.todo.TodoAppConstants.ITEM_PARAM;
+import static dev.rico.samples.todo.TodoAppConstants.REMOVE_ACTION;
+import static dev.rico.samples.todo.TodoAppConstants.TODO_CONTROLLER_NAME;
 
 @SpringBootTest(classes = ToDoServerConfiguration.class)
 public class ToDoControllerTests extends SpringTestNGControllerTest {
