@@ -1,0 +1,81 @@
+{
+  "id": "rico-realm",
+  "realm": "rico-realm",
+  "enabled": true,
+  "displayName": "Rico realm",
+  "users": [
+    {
+      "username": "user",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "password",
+          "temporary": false
+        }
+      ]
+    },
+    {
+      "username": "user-tenant1",
+      "enabled": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "user-tenant1"
+        }
+      ],
+      "realmRoles": [
+        "user"
+      ],
+      "clientRoles": {
+        "multi-tenant": [
+          "user"
+        ]
+      }
+    }
+  ],
+  "roles": {
+    "realm": [
+      {
+        "name": "user",
+        "description": "User privileges"
+      }
+    ]
+  },
+  "scopeMappings": [
+    {
+      "client": "multi-tenant",
+      "roles": [
+        "user"
+      ]
+    }
+  ],
+  "clients": [
+    {
+      "clientId": "multi-tenant",
+      "enabled": true,
+      "adminUrl": "/multitenant/tenant1",
+      "baseUrl": "/multitenant/tenant1",
+      "redirectUris": [
+        "/multitenant/tenant1/*"
+      ],
+      "secret": "password"
+    },
+    {
+      "clientId": "rico-client",
+      "name": "Default Rico Client",
+      "description": "The default client for Rico",
+      "enabled": true,
+      "directAccessGrantsEnabled": true,
+      "publicClient": true,
+      "bearerOnly": false,
+      "redirectUris": [
+        "/*"
+      ],
+      "webOrigins": [
+        "*"
+      ]
+    }
+  ]
+}
