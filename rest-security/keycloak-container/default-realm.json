@@ -27,7 +27,7 @@
   },
   "scopeMappings": [
     {
-      "client": "multi-tenant",
+      "client": "rico-client",
       "roles": [
         "user"
       ]
