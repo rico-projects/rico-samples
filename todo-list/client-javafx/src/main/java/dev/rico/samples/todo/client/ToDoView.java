@@ -1,4 +1,5 @@
 /*
+ * Copyright 2018-2019 Karakun AG.
  * Copyright 2015-2018 Canoo Engineering AG.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,11 +16,11 @@
  */
 package dev.rico.samples.todo.client;
 
-import dev.rico.samples.todo.ToDoItem;
-import dev.rico.samples.todo.ToDoList;
 import dev.rico.client.remoting.ClientContext;
 import dev.rico.client.remoting.FXBinder;
 import dev.rico.client.remoting.view.AbstractFXMLViewController;
+import dev.rico.samples.todo.ToDoItem;
+import dev.rico.samples.todo.ToDoList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
