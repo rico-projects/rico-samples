@@ -1,6 +1,6 @@
 = Rico: Security Sample Application
 
-These example show how the security APIs of Rico can be used. The clients of this sample simply do a login against the server and call a secure REST endpoint on the server.
+This example shows how the security APIs of Rico can be used. The clients of this sample simply do a login against the server and call a secure REST endpoint on the server.
 
 === How is the security working?
 
@@ -8,7 +8,7 @@ Rico uses link:https://www.keycloak.org/[Keycloak] for identity and access manag
 
 image::.readme/keycloak.png[]
 
-The security is based on OpenID connect and JWT tokens. Once a client is logged in, it will receive a JWT security token. The HTTP client of Rico automatically adds this token to any request against the server. By doing so, secured endpoints can be called without any additional security handling after a successful login.
+The security is based on OpenID connect and JWT tokens. Once a client is logged in, it will receive a JWT security token. The HTTP client of Rico automatically add this token to any request that is send to the server. By doing so, secured endpoints can be called without any additional security handling after a successful login.
 
 image::.readme/http-client.png[]
 
@@ -27,10 +27,8 @@ You need to have the following things installed:
 First, you need to have everthing compiled, so please run `mvn install` in the root directory of this samples project.
 
 To use the security features a Keycloak instance must be configured and started.
-The easiest way is to use the Docker based Keycloak container that is provided
-as part of this sample. If you have installed Docker on your machine everything
-else that is needed to start an automatically configured Keycloak server can
-be found in the `keycloak-container` folder of this sample.
+The easiest way is to use the Docker based Keycloak container that is provided as part of this sample. 
+If you have Docker installed on your machine everything else that is needed to start an automatically configured Keycloak server can be found in the `keycloak-container` folder of this sample.
 
 The folder contains several scripts that can be used to the build, start & remove the Keycloak Docker container. To run the scripts Docker (and Docker Compose) must be installed locally. The folder contains 2 scripts:
 
@@ -38,10 +36,10 @@ The folder contains several scripts that can be used to the build, start & remov
 
 * `restart` -  This script stops and removes the Keycloak Docker container if it is present. After that the container is created and started.
 
-Once you have checked out the repository you only need to call the restart script from the `keycloak-container` folder and the Docker container will be created and started. Since this will download keycloak and do several configuration steps this can take some minutes. The server is up and running once you see the following message in the log:
+Once you have checked out the repository you only need to call the restart script from the `keycloak-container` folder and the Docker container will be created and started. Since this will download keycloak and do several configuration steps this can take some minutes. The server is up and running once you see a message similar to following in the log:
 
 ```
-Keycloak 3.4.0.Final (WildFly Core 3.0.1.Final) started in 14189ms - Started 523 of 845 services (568 services are lazy, passive or on-demand)
+rico-security-sample-keycloak-server_1  | 11:38:24,869 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: Keycloak 6.0.1 (WildFly Core 8.0.0.Final) started in 34158ms - Started 672 of 937 services (652 services are lazy, passive or on-demand)
 ```
 
 === Start a Server
