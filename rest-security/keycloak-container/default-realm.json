@@ -1,0 +1,53 @@
+{
+  "id": "rico-realm",
+  "realm": "rico-realm",
+  "enabled": true,
+  "displayName": "Rico realm",
+  "users": [
+    {
+      "username": "user",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "password",
+          "temporary": false
+        }
+      ]
+    }
+  ],
+  "roles": {
+    "realm": [
+      {
+        "name": "user",
+        "description": "User privileges"
+      }
+    ]
+  },
+  "scopeMappings": [
+    {
+      "client": "rico-client",
+      "roles": [
+        "user"
+      ]
+    }
+  ],
+  "clients": [
+    {
+      "clientId": "rico-client",
+      "name": "Default Rico Client",
+      "description": "The default client for Rico",
+      "enabled": true,
+      "directAccessGrantsEnabled": true,
+      "publicClient": true,
+      "bearerOnly": false,
+      "redirectUris": [
+        "/*"
+      ],
+      "webOrigins": [
+        "*"
+      ]
+    }
+  ]
+}
