@@ -16,7 +16,6 @@
  */
 package dev.rico.samples.todo;
 
-
 import dev.rico.remoting.ObservableList;
 import dev.rico.remoting.Property;
 import dev.rico.remoting.RemotingBean;

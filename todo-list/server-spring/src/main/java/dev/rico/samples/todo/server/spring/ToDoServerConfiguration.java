@@ -14,8 +14,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package dev.rico.samples.todo.server;
+package dev.rico.samples.todo.server.spring;
 
+import dev.rico.samples.todo.server.TodoItemStore;
 import dev.rico.server.remoting.event.RemotingEventBus;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Bean;

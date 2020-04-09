@@ -18,6 +18,7 @@ package dev.rico.samples.todo.server;
 
 import dev.rico.client.remoting.Param;
 import dev.rico.samples.todo.ToDoList;
+import dev.rico.samples.todo.server.spring.ToDoServerConfiguration;
 import dev.rico.server.remoting.test.ControllerUnderTest;
 import dev.rico.server.remoting.test.SpringTestNGControllerTest;
 import org.springframework.boot.test.context.SpringBootTest;
