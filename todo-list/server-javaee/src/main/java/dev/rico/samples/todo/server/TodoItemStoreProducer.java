@@ -17,7 +17,7 @@
 package dev.rico.samples.todo.server;
 
 
-import dev.rico.server.remoting.event.RemotingEventBus;
+import dev.rico.remoting.server.event.RemotingEventBus;
 
 import javax.enterprise.inject.Produces;
 import javax.inject.Singleton;

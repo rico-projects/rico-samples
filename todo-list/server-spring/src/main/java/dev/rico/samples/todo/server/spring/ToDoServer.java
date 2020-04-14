@@ -17,8 +17,8 @@
 package dev.rico.samples.todo.server.spring;
 
 
-import dev.rico.server.RicoApplication;
-import dev.rico.server.remoting.EnableRemoting;
+import dev.rico.remoting.server.spring.EnableRemoting;
+import dev.rico.server.spring.RicoApplication;
 import org.springframework.boot.SpringApplication;
 
 @RicoApplication

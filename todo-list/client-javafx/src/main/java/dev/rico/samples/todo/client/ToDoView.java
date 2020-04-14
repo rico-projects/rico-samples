@@ -16,9 +16,9 @@
  */
 package dev.rico.samples.todo.client;
 
-import dev.rico.client.remoting.ClientContext;
-import dev.rico.client.remoting.FXBinder;
-import dev.rico.client.remoting.view.AbstractFXMLViewController;
+import dev.rico.remoting.client.ClientContext;
+import dev.rico.remoting.client.javafx.FXBinder;
+import dev.rico.remoting.client.javafx.view.AbstractFXMLViewController;
 import dev.rico.samples.todo.ToDoItem;
 import dev.rico.samples.todo.ToDoList;
 import javafx.fxml.FXML;

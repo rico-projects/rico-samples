@@ -16,8 +16,8 @@
  */
 package dev.rico.samples.todo.server.spring;
 
+import dev.rico.remoting.server.event.RemotingEventBus;
 import dev.rico.samples.todo.server.TodoItemStore;
-import dev.rico.server.remoting.event.RemotingEventBus;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

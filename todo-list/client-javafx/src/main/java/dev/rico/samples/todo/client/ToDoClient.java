@@ -16,8 +16,8 @@
  */
 package dev.rico.samples.todo.client;
 
-import dev.rico.client.remoting.AbstractRemotingApplication;
-import dev.rico.client.remoting.ClientContext;
+import dev.rico.remoting.client.ClientContext;
+import dev.rico.remoting.client.javafx.AbstractRemotingApplication;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.scene.Scene;

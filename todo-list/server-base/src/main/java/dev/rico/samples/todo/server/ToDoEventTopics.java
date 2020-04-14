@@ -17,7 +17,7 @@
 package dev.rico.samples.todo.server;
 
 
-import dev.rico.server.remoting.event.Topic;
+import dev.rico.remoting.server.event.Topic;
 
 public interface ToDoEventTopics {
 
