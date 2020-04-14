@@ -1,7 +1,7 @@
 package dev.rico.samples.http;
 
 import dev.rico.client.Client;
-import dev.rico.client.FxToolkit;
+import dev.rico.client.javafx.FxToolkit;
 import dev.rico.core.http.HttpClient;
 import dev.rico.core.http.RequestMethod;
 import javafx.application.Application;

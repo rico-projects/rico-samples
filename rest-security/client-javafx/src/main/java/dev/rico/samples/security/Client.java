@@ -17,8 +17,8 @@
 package dev.rico.samples.security;
 
 
-import dev.rico.client.security.Security;
 import dev.rico.core.http.HttpClient;
+import dev.rico.security.client.Security;
 
 public class Client {
 

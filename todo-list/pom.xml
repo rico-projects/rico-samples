@@ -21,6 +21,7 @@
         <module>client-javafx</module>
         <module>client-polymer</module>
         <module>client-angular</module>
+        <module>client-angularjs</module>
     </modules>
 
 </project>

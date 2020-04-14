@@ -15,7 +15,7 @@
  */
 package dev.rico.samples.http;
 
-import dev.rico.server.RicoApplication;
+import dev.rico.server.spring.RicoApplication;
 import org.springframework.boot.SpringApplication;
 
 @RicoApplication

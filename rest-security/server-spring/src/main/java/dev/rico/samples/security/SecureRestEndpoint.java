@@ -16,7 +16,7 @@
  */
 package dev.rico.samples.security;
 
-import dev.rico.server.security.SecurityContext;
+import dev.rico.security.server.SecurityContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

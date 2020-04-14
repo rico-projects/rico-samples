@@ -16,8 +16,8 @@
  */
 package dev.rico.samples.security;
 
-import dev.rico.server.RicoApplication;
-import dev.rico.server.security.EnableSecurity;
+import dev.rico.security.server.spring.EnableSecurity;
+import dev.rico.server.spring.RicoApplication;
 import org.springframework.boot.SpringApplication;
 
 @RicoApplication
