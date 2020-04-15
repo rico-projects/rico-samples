@@ -1,9 +1,11 @@
-package dev.rico.samples.http;
+package dev.rico.samples.http.client;
 
 import dev.rico.client.Client;
 import dev.rico.client.javafx.FxToolkit;
 import dev.rico.core.http.HttpClient;
 import dev.rico.core.http.RequestMethod;
+import dev.rico.samples.http.common.City;
+import dev.rico.samples.http.common.CityDetails;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
@@ -36,7 +38,7 @@ public class RestClient extends Application {
                     withContent(city).
                     readObject(CityDetails.class).
                     onDone(d -> showResult(d.getContent())).
-                    onError(ex -> showError(city)).
+                    onError(ex -> showError(city, ex)).
                     execute();
         });
 
@@ -55,7 +57,8 @@ public class RestClient extends Application {
         alert.showAndWait();
     }
 
-    public void showError(final City city) {
+    public void showError(final City city, final Exception exception) {
+        exception.printStackTrace();
         final Alert alert = new Alert(Alert.AlertType.ERROR);
         alert.setTitle("Error");
         alert.setContentText("Can not get details for city " + city.getName());

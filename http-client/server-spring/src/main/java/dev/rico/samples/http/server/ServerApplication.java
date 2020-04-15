@@ -13,34 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package dev.rico.samples.http;
+package dev.rico.samples.http.server;
 
-public class CityDetails extends City {
+import dev.rico.server.spring.RicoApplication;
+import org.springframework.boot.SpringApplication;
 
-    private String description;
+@RicoApplication
+public class ServerApplication {
 
-    private long population;
-
-    public CityDetails() {
-    }
-
-    public CityDetails(City city) {
-        super(city.getName(), city.getCountry());
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public long getPopulation() {
-        return population;
-    }
-
-    public void setPopulation(long population) {
-        this.population = population;
+    public static void main(final String[] args) {
+        SpringApplication.run(ServerApplication.class);
     }
 }

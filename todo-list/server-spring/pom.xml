@@ -8,7 +8,6 @@
         <groupId>dev.rico.samples</groupId>
         <artifactId>todo-list</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../</relativePath>
     </parent>
 
     <artifactId>todo-list-server-spring</artifactId>
@@ -17,6 +16,11 @@
         <dependency>
             <groupId>${groupId}</groupId>
             <artifactId>todo-list-server-base</artifactId>
+            <version>${version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${groupId}</groupId>
+            <artifactId>servlet-fake</artifactId>
             <version>${version}</version>
         </dependency>
         <dependency>
@@ -30,13 +34,11 @@
             <version>${rico.version}</version>
             <scope>test</scope>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
             <version>2.2.6.RELEASE</version>
         </dependency>
-
     </dependencies>
 
     <build>

@@ -13,8 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package dev.rico.samples.http;
+package dev.rico.samples.http.server;
 
+import dev.rico.samples.http.common.City;
+import dev.rico.samples.http.common.CityDetails;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -25,8 +27,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class CityEndpoint {
 
     @RequestMapping(method = RequestMethod.POST)
-    public CityDetails getDetails(@RequestBody final City city) {
-        final CityDetails cityDetails = new CityDetails(city);
+    public CityDetails getDetails(@RequestBody final City input) {
+        final CityDetails cityDetails = new CityDetails(input);
         cityDetails.setDescription("No description");
         cityDetails.setPopulation((long) (Math.random() * 1_000_000));
         return cityDetails;

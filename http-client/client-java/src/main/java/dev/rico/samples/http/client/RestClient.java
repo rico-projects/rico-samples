@@ -1,7 +1,9 @@
-package dev.rico.samples.http;
+package dev.rico.samples.http.client;
 
 import dev.rico.client.Client;
 import dev.rico.core.http.HttpClient;
+import dev.rico.samples.http.common.City;
+import dev.rico.samples.http.common.CityDetails;
 
 public class RestClient {
 

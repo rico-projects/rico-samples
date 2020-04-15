@@ -9,4 +9,6 @@ module dev.rico.samples.todolist.server {
     requires dev.rico.core;
     requires dev.rico.remoting.server;
     requires dev.rico.remoting.common;
+
+    opens dev.rico.samples.todo.server to dev.rico.core;
 }

@@ -40,10 +40,10 @@ In that case the application must be reachable under `http://localhost:8080/simp
 ==== Java
 
 To start the JavaFX client simply run `mvn jfx:run` from the client-javafx folder.
-Next to this the client can be started by the `dev.rico.samples.http.RestClient` class.
+Next to this the client can be started by the `dev.rico.samples.http.client.RestClient` class.
 
 
 ==== JavaFx
 
 To start the JavaFX client simply run `mvn jfx:run` from the client-javafx folder.
-Next to this the client can be started by the `dev.rico.samples.http.RestClient` class.
+Next to this the client can be started by the `dev.rico.samples.http.client.RestClient` class.
