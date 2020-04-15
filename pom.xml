@@ -31,7 +31,6 @@
     </repositories>
 
     <modules>
-        <module>servlet-fake</module>
         <module>todo-list</module>
         <module>http-client</module>
         <module>rest-security</module>

@@ -8,5 +8,4 @@ module dev.rico.samples.todolist.server.spring {
     requires spring.boot;
 
     opens dev.rico.samples.todo.server.spring;
-    exports dev.rico.samples.todo.server.spring;
 }
