@@ -19,11 +19,6 @@
             <version>${version}</version>
         </dependency>
         <dependency>
-            <groupId>${groupId}</groupId>
-            <artifactId>servlet-fake</artifactId>
-            <version>${version}</version>
-        </dependency>
-        <dependency>
             <groupId>dev.rico</groupId>
             <artifactId>rico-remoting-server-spring</artifactId>
             <version>${rico.version}</version>
