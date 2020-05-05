@@ -19,6 +19,9 @@
         <module>server-javaee</module>
         <module>server-spring</module>
         <module>client-javafx</module>
+        <module>client-polymer</module>
+        <module>client-angular</module>
+        <module>client-angularjs</module>
     </modules>
 
 </project>
