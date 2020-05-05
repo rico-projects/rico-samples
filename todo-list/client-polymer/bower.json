@@ -1,7 +1,7 @@
 {
   "name": "todo-client-polymer",
   "dependencies": {
-    "rico-polymer": "1.0.0-CR.1",
+    "rico-polymer": "1.0.0-CR.2",
     "font-roboto": "PolymerElements/font-roboto-local#^1.0.1",
     "iron-icon": "PolymerElements/iron-icon#^2.0.1",
     "iron-icons": "PolymerElements/iron-icons#^2.0.1",

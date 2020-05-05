@@ -34,7 +34,7 @@ This service will fire an event to the event bus and since all controllers are s
 
 You need to have the following things installed:
 
-* an Java SDK (tested with Java 8)
+* an Java SDK (tested with Java 8 and 11.0.7 (AdoptOpenJDK) )
 * Maven
 
 == How to run
