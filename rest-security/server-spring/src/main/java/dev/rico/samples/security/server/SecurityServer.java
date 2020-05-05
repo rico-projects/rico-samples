@@ -14,10 +14,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package dev.rico.samples.security;
+package dev.rico.samples.security.server;
 
-import dev.rico.server.RicoApplication;
-import dev.rico.server.security.EnableSecurity;
+import dev.rico.security.server.spring.EnableSecurity;
+import dev.rico.server.spring.RicoApplication;
 import org.springframework.boot.SpringApplication;
 
 @RicoApplication

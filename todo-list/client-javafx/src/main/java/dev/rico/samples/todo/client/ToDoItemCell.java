@@ -16,9 +16,9 @@
  */
 package dev.rico.samples.todo.client;
 
-import dev.rico.client.remoting.ControllerProxy;
-import dev.rico.client.remoting.FXBinder;
-import dev.rico.client.remoting.Param;
+import dev.rico.remoting.client.ControllerProxy;
+import dev.rico.remoting.client.Param;
+import dev.rico.remoting.client.javafx.FXBinder;
 import dev.rico.samples.todo.ToDoItem;
 import dev.rico.samples.todo.ToDoList;
 import javafx.scene.control.Button;

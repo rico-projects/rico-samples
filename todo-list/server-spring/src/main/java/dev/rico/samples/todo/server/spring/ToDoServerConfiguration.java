@@ -14,18 +14,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package dev.rico.samples.todo.server;
+package dev.rico.samples.todo.server.spring;
 
+import dev.rico.remoting.server.event.RemotingEventBus;
+import dev.rico.samples.todo.server.TodoItemStore;
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 
-import dev.rico.server.RicoApplication;
-import dev.rico.server.remoting.EnableRemoting;
-import org.springframework.boot.SpringApplication;
+@Configuration
+public class ToDoServerConfiguration {
 
-@RicoApplication
-@EnableRemoting
-public class ToDoServer {
-
-    public static void main(String... args) {
-        SpringApplication.run(ToDoServer.class, args);
+    @Bean
+    @Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)
+    public TodoItemStore createStore(RemotingEventBus eventBus) {
+        return new TodoItemStore(eventBus);
     }
 }

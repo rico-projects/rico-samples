@@ -15,6 +15,9 @@
  */
 package dev.rico.samples.http;
 
+import dev.rico.samples.http.common.City;
+import dev.rico.samples.http.common.CityDetails;
+
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 

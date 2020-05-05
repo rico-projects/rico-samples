@@ -18,13 +18,13 @@ package dev.rico.samples.todo.server;
 
 import dev.rico.core.functional.Subscription;
 import dev.rico.remoting.BeanManager;
+import dev.rico.remoting.server.Param;
+import dev.rico.remoting.server.RemotingAction;
+import dev.rico.remoting.server.RemotingController;
+import dev.rico.remoting.server.RemotingModel;
+import dev.rico.remoting.server.event.RemotingEventBus;
 import dev.rico.samples.todo.ToDoItem;
 import dev.rico.samples.todo.ToDoList;
-import dev.rico.server.remoting.Param;
-import dev.rico.server.remoting.RemotingAction;
-import dev.rico.server.remoting.RemotingController;
-import dev.rico.server.remoting.RemotingModel;
-import dev.rico.server.remoting.event.RemotingEventBus;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;

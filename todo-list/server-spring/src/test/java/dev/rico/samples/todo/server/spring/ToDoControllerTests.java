@@ -14,9 +14,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package dev.rico.samples.todo.server;
+package dev.rico.samples.todo.server.spring;
 
-import dev.rico.client.remoting.Param;
+import dev.rico.remoting.client.Param;
 import dev.rico.samples.todo.ToDoList;
 import dev.rico.server.remoting.test.ControllerUnderTest;
 import dev.rico.server.remoting.test.SpringTestNGControllerTest;
@@ -58,7 +58,7 @@ public class ToDoControllerTests extends SpringTestNGControllerTest {
         //when:
         controllerUnderTest.getModel().getNewItemText().set("Banana");
         controllerUnderTest.invoke(ADD_ACTION);
-        controllerUnderTest.invoke(CHANGE_ACTION, new Param(ITEM_PARAM, "Banana"));
+        controllerUnderTest.invoke(CHANGE_ACTION, Param.of(ITEM_PARAM, "Banana"));
 
         //then:
         Assert.assertEquals(controllerUnderTest.getModel().getItems().get(0).isCompleted() ,true);

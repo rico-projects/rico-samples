@@ -14,23 +14,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package dev.rico.samples.security;
+package dev.rico.samples.todo.server.spring;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import dev.rico.remoting.server.spring.EnableRemoting;
+import dev.rico.server.spring.RicoApplication;
+import org.springframework.boot.SpringApplication;
 
-@RestController
-@RequestMapping("/api/message")
-public class OpenRestEndpoint {
+@RicoApplication
+@EnableRemoting
+public class ToDoServer {
 
-    private final static Logger LOG = LoggerFactory.getLogger(OpenRestEndpoint.class);
-
-    @RequestMapping(method = RequestMethod.GET)
-    public String getOpenMessage() {
-        LOG.info("Open endpoint called");
-        return "An unsecure message";
+    public static void main(String... args) {
+        SpringApplication.run(ToDoServer.class, args);
     }
 }
