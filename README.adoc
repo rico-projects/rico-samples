@@ -18,7 +18,7 @@ You can find more information about the sample link:http-client[in the subdirect
 
 == Todo List
 
-This sample shows some common usecases for the remoting API by providing a server based todo list that can be shared between several clients. 
+This sample shows some common usecases for the remoting API by providing a server based todo list that can be shared between several clients.
 
 You can find more information about the sample link:todo-list[in the subdirectory].
 

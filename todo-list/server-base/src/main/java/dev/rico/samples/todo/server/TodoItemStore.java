@@ -37,7 +37,7 @@ public class TodoItemStore {
     }
 
     void addItem(String name) {
-        if(name != null && !name.isEmpty() && !items.containsKey(name)) {
+        if (name != null && !name.isEmpty() && !items.containsKey(name)) {
             items.put(name, false);
             eventBus.publish(ITEM_ADDED, name);
         }

@@ -27,7 +27,7 @@ You need to have the following things installed:
 First, you need to have everthing compiled, so please run `mvn install` in the root directory of this samples project.
 
 To use the security features a Keycloak instance must be configured and started.
-The easiest way is to use the Docker based Keycloak container that is provided as part of this sample. 
+The easiest way is to use the Docker based Keycloak container that is provided as part of this sample.
 If you have Docker installed on your machine everything else that is needed to start an automatically configured Keycloak server can be found in the `keycloak-container` folder of this sample.
 
 The folder contains several scripts that can be used to the build, start & remove the Keycloak Docker container. To run the scripts Docker (and Docker Compose) must be installed locally. The folder contains 2 scripts:

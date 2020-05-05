@@ -103,7 +103,7 @@
           }
         }
       }
-    },
+    }
   },
   "defaultProject": "rico-angular-demo-app"
 }

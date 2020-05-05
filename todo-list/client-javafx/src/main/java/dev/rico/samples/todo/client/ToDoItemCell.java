@@ -65,7 +65,7 @@ public class ToDoItemCell extends ListCell<ToDoItem> {
         itemProperty().addListener((obs, oldVal, newVal) -> {
             itemNameText.textProperty().unbind();
             itemNameText.strikethroughProperty().unbind();
-            if(newVal != null) {
+            if (newVal != null) {
                 FXBinder.bind(itemNameText.textProperty()).to(newVal.getTextProperty());
                 FXBinder.bind(itemNameText.strikethroughProperty()).bidirectionalTo(newVal.getCompletedProperty());
             }

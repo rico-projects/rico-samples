@@ -44,9 +44,9 @@ public class ToDoControllerTests extends SpringTestNGControllerTest {
         controllerUnderTest.invoke(ADD_ACTION);
 
         //then:
-        Assert.assertEquals(controllerUnderTest.getModel().getItems().size() ,1);
-        Assert.assertEquals(controllerUnderTest.getModel().getItems().get(0).getText() ,"Banana");
-        Assert.assertEquals(controllerUnderTest.getModel().getItems().get(0).isCompleted() ,false);
+        Assert.assertEquals(controllerUnderTest.getModel().getItems().size(), 1);
+        Assert.assertEquals(controllerUnderTest.getModel().getItems().get(0).getText(), "Banana");
+        Assert.assertEquals(controllerUnderTest.getModel().getItems().get(0).isCompleted(), false);
     }
 
     @Test
@@ -61,7 +61,7 @@ public class ToDoControllerTests extends SpringTestNGControllerTest {
         controllerUnderTest.invoke(CHANGE_ACTION, Param.of(ITEM_PARAM, "Banana"));
 
         //then:
-        Assert.assertEquals(controllerUnderTest.getModel().getItems().get(0).isCompleted() ,true);
+        Assert.assertEquals(controllerUnderTest.getModel().getItems().get(0).isCompleted(), true);
     }
 
     @Test
@@ -76,7 +76,7 @@ public class ToDoControllerTests extends SpringTestNGControllerTest {
         controllerUnderTest.invoke(REMOVE_ACTION, new Param(ITEM_PARAM, "Banana"));
 
         //then:
-        Assert.assertEquals(controllerUnderTest.getModel().getItems().size() ,0);
+        Assert.assertEquals(controllerUnderTest.getModel().getItems().size(), 0);
     }
 
     @Test
@@ -91,8 +91,8 @@ public class ToDoControllerTests extends SpringTestNGControllerTest {
         ControllerUnderTest<ToDoList> controllerUnderTest2 = createController(TODO_CONTROLLER_NAME);
 
         //then:
-        Assert.assertEquals(controllerUnderTest2.getModel().getItems().size() ,1);
-        Assert.assertEquals(controllerUnderTest2.getModel().getItems().get(0).getText() ,"Banana");
+        Assert.assertEquals(controllerUnderTest2.getModel().getItems().size(), 1);
+        Assert.assertEquals(controllerUnderTest2.getModel().getItems().get(0).getText(), "Banana");
     }
 
     @Test
@@ -108,8 +108,8 @@ public class ToDoControllerTests extends SpringTestNGControllerTest {
         controllerUnderTest.invoke(ADD_ACTION);
 
         //then:
-        Assert.assertEquals(controllerUnderTest2.getModel().getItems().size() ,1);
-        Assert.assertEquals(controllerUnderTest2.getModel().getItems().get(0).getText() ,"Banana");
+        Assert.assertEquals(controllerUnderTest2.getModel().getItems().size(), 1);
+        Assert.assertEquals(controllerUnderTest2.getModel().getItems().get(0).getText(), "Banana");
     }
 
     @Test
@@ -126,8 +126,8 @@ public class ToDoControllerTests extends SpringTestNGControllerTest {
         controllerUnderTest.invoke(CHANGE_ACTION, new Param(ITEM_PARAM, "Banana"));
 
         //then:
-        Assert.assertEquals(controllerUnderTest2.getModel().getItems().size() ,1);
-        Assert.assertEquals(controllerUnderTest2.getModel().getItems().get(0).isCompleted() ,true);
+        Assert.assertEquals(controllerUnderTest2.getModel().getItems().size(), 1);
+        Assert.assertEquals(controllerUnderTest2.getModel().getItems().get(0).isCompleted(), true);
     }
 
     @Test
@@ -144,6 +144,6 @@ public class ToDoControllerTests extends SpringTestNGControllerTest {
         controllerUnderTest.invoke(REMOVE_ACTION, new Param(ITEM_PARAM, "Banana"));
 
         //then:
-        Assert.assertEquals(controllerUnderTest2.getModel().getItems().size() ,0);
+        Assert.assertEquals(controllerUnderTest2.getModel().getItems().size(), 0);
     }
 }

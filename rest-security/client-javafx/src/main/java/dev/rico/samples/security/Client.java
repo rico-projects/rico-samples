@@ -22,7 +22,7 @@ import dev.rico.security.client.Security;
 
 public class Client {
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         final HttpClient client = dev.rico.client.Client.getService(HttpClient.class);
 
         final String message = client.get("http://localhost:8080/api/message").

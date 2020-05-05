@@ -28,9 +28,11 @@ public class ToDoItem {
     public String getText() {
         return text.get();
     }
+
     public void setText(String text) {
         this.text.set(text);
     }
+
     public Property<String> getTextProperty() {
         return text;
     }
@@ -45,12 +47,15 @@ public class ToDoItem {
     public boolean isCompleted() {
         return Boolean.TRUE == completed.get();
     }
+
     public void setCompleted(boolean completed) {
         this.completed.set(completed);
     }
+
     public Property<Boolean> getCompletedProperty() {
         return completed;
     }
+
     public ToDoItem withState(final boolean state) {
         setCompleted(state);
         return this;
