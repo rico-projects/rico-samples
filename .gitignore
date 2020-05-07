@@ -31,3 +31,4 @@ node/
 node_modules/
 .DS_Store
 keycloak-3.4.0.Final.tar
+.java-version
