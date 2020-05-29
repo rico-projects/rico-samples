@@ -1,0 +1,8 @@
+version: '2'
+services:
+
+  prometheus:
+    image: metrics-sample-prometheus
+    build: prometheus
+    ports:
+      - "9090:9090"
