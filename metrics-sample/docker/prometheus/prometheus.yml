@@ -2,8 +2,8 @@ global:
   scrape_interval:     10s # Scrape interval to every 10 seconds. Default value is every 1 minute.
 
 scrape_configs:
-  - job_name: 'micrometer'
+  - job_name: 'rico-metrics'
 
     metrics_path: '/metrics'
     static_configs:
-      - targets: ['host.docker.internal:8080'] # host where our application is deployed
+      - targets: ['app-server:8080'] # host where our application is deployed
