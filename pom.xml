@@ -34,6 +34,7 @@
         <module>todo-list</module>
         <module>http-client</module>
         <module>rest-security</module>
+        <module>metrics-sample</module>
     </modules>
 
     <build>
