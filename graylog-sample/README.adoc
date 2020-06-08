@@ -1,0 +1,3 @@
+https://docs.graylog.org/en/3.2/pages/installation/docker.html
+
+Graylog login: admin/admin
