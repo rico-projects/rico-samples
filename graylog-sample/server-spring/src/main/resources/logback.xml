@@ -21,7 +21,6 @@
                 <pattern>%m%n</pattern>
             </fullPatternLayout>
             <numbersAsString>false</numbersAsString>
-            <staticField>app_name:backend</staticField>
             <staticField>os_arch:${os.arch}</staticField>
             <staticField>os_name:${os.name}</staticField>
             <staticField>os_version:${os.version}</staticField>
@@ -38,9 +37,13 @@
         </encoder>
     </appender>
 
-    <root level="debug">
+    <appender name="RICO" class="dev.rico.logback.appender.ContextWrappingAppender">
         <appender-ref ref="GELF" />
         <appender-ref ref="CONSOLE" />
+    </appender>
+
+    <root level="debug">
+        <appender-ref ref="RICO" />
     </root>
 
 </configuration>

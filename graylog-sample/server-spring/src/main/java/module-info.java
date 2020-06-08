@@ -6,7 +6,5 @@ module dev.rico.samples.http.server.spring {
     requires spring.boot;
     requires spring.web;
     requires spring.beans;
-    requires com.fasterxml.jackson.databind;
     requires org.slf4j;
-
 }

@@ -16,7 +16,12 @@
     <dependencies>
         <dependency>
             <groupId>${rico.package}</groupId>
-            <artifactId>rico-metrics-server-spring</artifactId>
+            <artifactId>rico-context-logback-appender</artifactId>
+            <version>${rico.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${rico.package}</groupId>
+            <artifactId>rico-server-spring</artifactId>
             <version>${rico.version}</version>
         </dependency>
         <dependency>
