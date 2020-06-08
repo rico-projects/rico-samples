@@ -11,7 +11,7 @@
         <relativePath>../</relativePath>
     </parent>
 
-    <artifactId>graylog-sample-server-spring</artifactId>
+    <artifactId>graylog-sample-server-spring-logback</artifactId>
 
     <dependencies>
         <dependency>
@@ -37,7 +37,7 @@
     </dependencies>
 
     <build>
-        <finalName>metrics-sample-server-spring</finalName>
+        <finalName>graylog-sample-server-spring-logback</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

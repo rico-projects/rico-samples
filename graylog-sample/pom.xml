@@ -14,7 +14,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>server-spring</module>
+        <module>server-spring-logback</module>
+        <module>server-spring-log4j</module>
     </modules>
 
 </project>
