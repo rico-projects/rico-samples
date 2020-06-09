@@ -16,7 +16,7 @@
     <dependencies>
         <dependency>
             <groupId>${rico.package}</groupId>
-            <artifactId>rico-context-logback-appender</artifactId>
+            <artifactId>rico-logback-appender</artifactId>
             <version>${rico.version}</version>
         </dependency>
         <dependency>
