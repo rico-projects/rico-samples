@@ -6,17 +6,17 @@
 
     <parent>
         <groupId>dev.rico.samples</groupId>
-        <artifactId>graylog-sample</artifactId>
+        <artifactId>logging-sample</artifactId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../</relativePath>
     </parent>
 
-    <artifactId>graylog-sample-server-spring-logback</artifactId>
+    <artifactId>logging-sample-server-spring-log4j</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>${rico.package}</groupId>
-            <artifactId>rico-logback-appender</artifactId>
+            <artifactId>rico-log4j2-appender</artifactId>
             <version>${rico.version}</version>
         </dependency>
         <dependency>
@@ -28,16 +28,27 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
             <version>2.2.6.RELEASE</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
-            <groupId>de.siegmar</groupId>
-            <artifactId>logback-gelf</artifactId>
-            <version>3.0.0</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-log4j2</artifactId>
+            <version>2.2.6.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>biz.paluch.logging</groupId>
+            <artifactId>logstash-gelf</artifactId>
+            <version>1.14.0</version>
         </dependency>
     </dependencies>
 
     <build>
-        <finalName>graylog-sample-server-spring-logback</finalName>
+        <finalName>graylog-sample-server-spring-log4j</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
