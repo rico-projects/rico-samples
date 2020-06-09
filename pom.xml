@@ -35,6 +35,7 @@
         <module>http-client</module>
         <module>rest-security</module>
         <module>metrics-sample</module>
+        <module>graylog-sample</module>
     </modules>
 
     <build>
