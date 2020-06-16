@@ -16,6 +16,12 @@ This sample shows how the http client of Rico can be used
 
 You can find more information about the sample link:http-client[in the subdirectory].
 
+== Metrics sample
+
+This sample shows how Rico metrics can be used to monitor applications.
+
+You can find more information about the sample link:metrics-sample[in the subdirectory].
+
 == Logging sample
 
 This sample shows how Rico can add context information to logging and store logging centralized by using the GELF format.
