@@ -11,7 +11,7 @@ By using such appender all context information of Rico (see `dev.rico.core.conte
 When having several applications and services in production the monitoring can become quite complexe.
 By providing a centralized log management that stores all logs and provides analytic functionalities developers and administrators can find problems more easily.
 
-image::.readme/central-log.svg
+image::.readme/central-log.svg[]
 
 In this sample 2 different tools (ELK stack & Graylog) can be used to provide a centralized log management.
 For both stacks you can find predefined docker-compose setups that can be used to easily start a running environment.
@@ -22,7 +22,7 @@ One important aspect is the support of custom fields / tags that can be used to 
 The Rico context API provides an easy way to add metadata to an application and by using the Rico logging-appenders such metadata will automatically be added to log informations.
 Next to this the GELF standard is used in this sample to send the logging over an UDP connection to the used log manager.
 
-image::.readme/logging-appender.svg
+image::.readme/logging-appender.svg[]
 
 === Using the Graylog stack
 
