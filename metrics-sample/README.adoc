@@ -2,3 +2,6 @@ https://community.grafana.com/t/data-source-on-startup/8618/2
 https://community.grafana.com/t/solved-datasource-provisioning-prometheus/6300/10
 
 Grafana login: admin/admin
+
+localhost:9090 <- Prometheus
+localhost:3000 <- Grafana

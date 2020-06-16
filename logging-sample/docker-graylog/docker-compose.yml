@@ -1,5 +1,6 @@
 version: '2'
 services:
+  #See https://docs.graylog.org/en/3.2/pages/installation/docker.html
   # MongoDB: https://hub.docker.com/_/mongo/
   mongodb:
     image: mongo:3
