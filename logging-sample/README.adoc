@@ -36,6 +36,7 @@ When opening the ui for the first time you need to login to Graylog (user: admin
 
 TODO: Short Description of the Graylog ui
 TODO: Define GELF Input in Graylog
+
 image::.readme/graylog-gelf-logging.png[]
 
 Once Graylog is started the 2 Spring Boot application that are part of the sample can be started.
