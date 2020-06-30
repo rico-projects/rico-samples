@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="WARN" packages="dev.rico.log4j.appender, biz.paluch.logging.gelf.log4j2">
+<Configuration status="WARN" packages="dev.rico.log4j2.appender, biz.paluch.logging.gelf.log4j2">
     <Appenders>
         <Gelf name="Gelf" host="udp:localhost" port="12201" version="1.1" extractStackTrace="true"
               filterStackTrace="true" mdcProfiling="true" includeFullMdc="true" maximumMessageSize="8192"
