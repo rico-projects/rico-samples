@@ -2,8 +2,6 @@
 
 == Prerequisites
 
-* https://community.grafana.com/t/data-source-on-startup/8618/2
-* https://community.grafana.com/t/solved-datasource-provisioning-prometheus/6300/10
 
 
 == How to run
@@ -29,6 +27,10 @@ Trigger an request the Rico Sample Application at `http://localhost:8080/api/sam
 
 To see logged events in Prometheus, see `http://localhost:9090`
 
-FOr a nice Graphana Dashboard, visit `http://localhost:3000`, if you want to configure things, you can use the credentails `admin/admin`
+For a nice Graphana Dashboard, visit `http://localhost:3000`, if you want to configure things, you can use the credentails `admin/admin`
 
 
+== Notes & Resources
+
+* https://community.grafana.com/t/data-source-on-startup/8618/2
+* https://community.grafana.com/t/solved-datasource-provisioning-prometheus/6300/10
