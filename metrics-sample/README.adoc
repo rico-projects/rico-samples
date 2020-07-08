@@ -1,6 +1,5 @@
 = Rico: Metrics Sample
 
-== Prerequisites
 
 
 
@@ -18,7 +17,6 @@ You shoudl see the logoutput of the starting containers and when the application
 
 ```
 app-server_1  | 2020-07-07 15:00:31.532  INFO 6 --- [           main] d.r.s.http.server.ServerApplication      : Started ServerApplication in 5.735 seconds (JVM running for 6.479)
-app-server_1  | 2020-07-07 15:00:37.233 DEBUG 6 --- [nio-8080-exec-1] d.r.i.m.server.servlet.MetricsServlet    : Metrics servlet called
 ```
 
 == What to do & see
