@@ -13,7 +13,7 @@ docker-compose build
 docker-compose up
 ```
 
-You shoudl see the logoutput of the starting containers and when the application is started something like
+You should see in the log-output of the starting containers and when the application is started something like:
 
 ```
 app-server_1  | 2020-07-07 15:00:31.532  INFO 6 --- [           main] d.r.s.http.server.ServerApplication      : Started ServerApplication in 5.735 seconds (JVM running for 6.479)
@@ -21,11 +21,11 @@ app-server_1  | 2020-07-07 15:00:31.532  INFO 6 --- [           main] d.r.s.http
 
 == What to do & see
 
-Trigger an request the Rico Sample Application at `http://localhost:8080/api/sample` ()you will only see a white page.
+Trigger an request to the Rico Sample Application at `http://localhost:8080/api/sample`. If you do this in a browser you will only see a white page. A pull request for a better result is welcome ;)
 
-To see logged events in Prometheus, see `http://localhost:9090`
+To see logged events in Prometheus, open the web frontend on `http://localhost:9090`
 
-For a nice Graphana Dashboard, visit `http://localhost:3000`, if you want to configure things, you can use the credentails `admin/admin`
+For a nice Graphana dashboard, visit `http://localhost:3000`. if you want to configure the setup, you can use the credentails `admin/admin`
 
 
 == Notes & Resources
