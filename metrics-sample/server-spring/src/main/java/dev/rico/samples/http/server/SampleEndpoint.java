@@ -2,9 +2,7 @@ package dev.rico.samples.http.server;
 
 import dev.rico.metrics.Metrics;
 import dev.rico.metrics.types.Timer;
-import dev.rico.server.timing.Metric;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
