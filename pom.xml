@@ -13,7 +13,7 @@
         <maven.compiler.target>11</maven.compiler.target>
         <maven.compiler.source>11</maven.compiler.source>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <rico.version>1.0.0-SNAPSHOT</rico.version>
+        <rico.version>2.0.0</rico.version>
         <rico.package>dev.rico</rico.package>
     </properties>
 
