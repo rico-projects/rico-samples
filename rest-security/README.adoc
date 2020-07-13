@@ -75,3 +75,8 @@ mvn jetty:run
 
 After this, you can access the sample via `http://localhost:8082`
 
+=== Access Keycloak
+
+Keycloak provides a web fronted that is available at `http://localhost:8081`.
+As defined in the `Dockerfile` you can use the login `username` with password `password` to access the frontend.
+In the Keycloak web frontend you can create new users for the realm `rico-realm` that is used in this sample.
