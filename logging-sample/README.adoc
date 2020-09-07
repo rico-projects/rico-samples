@@ -4,7 +4,7 @@ This example shows how the logging appender of Rico can be used to add useful me
 Next to this the sample shows how application logging can be stored in a central place.
 
 Rico provides logging appender for [log4j2](https://logging.apache.org/log4j/2.x/) and [logback](http://logback.qos.ch/).
-By using such an appender all context information of Rico (see `dev.rico.core.context.RicoApplicationContext` for more information) will automatically be added to each log message.
+By using such an appender all context information of Rico (see `dev.rico.core.context.RicoApplicationContext` for more information) will automatically be added to MDC (Mapped Diagnostic Context) of each log message.
 
 == Centralized logging
 
@@ -15,7 +15,7 @@ image::.readme/central-log.svg[]
 
 In this sample 2 different tools (ELK stack & Graylog) can be used to provide a centralized log management.
 For both stacks you can find predefined docker-compose setups that can be used to easily start a running environment.
-While each user can choose what tool he wants to test you can never start both of the provided setups since this would end in a port conflict.
+Since both servers are configured to listen on same port they cannot be run simultaneously.
 
 Next to storing logging a log management provides much more functionality.
 One important aspect is the support of custom fields or tags that can be used to analyze logging.
@@ -32,30 +32,62 @@ The complete setup can be found in the `docker-graylog` folder.
 The `docker-compose` tool is needed to run the sample.
 If `docker-compose` is installed on your system you only need to execute the `start.sh` from `docker-graylog` folder to boot the graylog instance.
 Once this is done the web ui of Graylog can be accessed at http://localhost:9000[http://localhost:9000].
+
+==== Configuring Graylog
+
 When opening the ui for the first time you need to login to Graylog (user: admin - passwort: admin).
 
+Graylog supports different sources of log messages.
+Before it is able to receive any message you need to tell it where to listen.
 
-TODO: Short Description of the Graylog ui
-
-TODO: Define GELF Input in Graylog
-
+1. Visit to http://localhost:9000[http://localhost:9000]
+1. Login to Graylog (user: admin - passwort: admin)
+1. In the top menu select "System" > "Inputs"
+1. Select "GELF UDP" as the input type and click "Launch new input".
+1. In the popup select the "global" checkbox and give the input a title (i.e. GELF UDP)
+1. Click "save".
++
 image::.readme/graylog-gelf-input.png[]
-
-Once Graylog is started the 2 Spring Boot application that are part of the sample can be started.
-Go to the `server-spring-log4j` or `server-spring-logback` subfolder and use maven to start the server:
-`mvn spring-boot:run`
+1. Click "Show received messages" to the right of the newly added input.
+1. Click on the little play symbol in the top right corner to enable auto refresh of the page.
+1. Launch the server-spring-log4j or the server-spring-logback example (`mvn spring-boot:run`).
+1. Click on a message to see all the details.
++
+image::.readme/graylog-logging.png[]
 
 The server application will send the complete logging to the Graylog server by using the GELF format.
 You can see the complete Rico context based metadata that is part of each logging message in the Graylog UI.
 
-image::.readme/graylog-logging.png[]
 
 The server applications both provide a http endpoint that can be called to create additional logging.
 To call the endpoint just open http://localhost:8080/api/sample[http://localhost:8080/api/sample].
 
 === Using the ELK stack
 
-TODO: documentation for ELK stack
+The sample provides docker containers to easily start a preconfigured ELK stack that is used to store the log messages.
+The complete setup can be found in the `docker-elk` folder.
+The `docker-compose` tool is needed to run the sample.
+If `docker-compose` is installed on your system you only need to execute the `start.sh` from `docker-elk` folder to boot the ELK stack.
+Once this is done the web ui of Kibana can be accessed at http://localhost:5601[http://localhost:5601].
+
+INFO::
+If the ELK stack fails to start with the message `max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]` or similar than have a look at https://github.com/docker-library/elasticsearch/issues/111[elasticsearch issue #111]
+
+=== Configuring Kibana
+
+The ELK stack is ready to receive log messages without a configuration.
+In order to browse the messages a little configuration is needed:
+
+1. Launch the server-spring-log4j or the server-spring-logback example (`mvn spring-boot:run`).
+1. Visit http://localhost:5601[http://localhost:5601].
+1. If asked to load sample data then chose "I want to se my own data".
+1. In the left-hand menu select "Discover".
+1. Click "Create Index Pattern".
+1. Enter `*` for the index pattern.
+1. Click "Next step".
+1. Chose `@timestamp` as the "Time filter field name".
+1. Click "Create index pattern".
+1. In the left-hand menu select "Discover".
 
 == Log4J, Logback or SLF4J
 
