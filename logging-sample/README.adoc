@@ -91,4 +91,11 @@ In order to browse the messages a little configuration is needed:
 
 == Log4J, Logback or SLF4J
 
-TODO: Some information about the logging frameworks that are used in the sample and why we decided to use such APIs / setup.
+Rico uses SLF4J throughout its Java code.
+By using SLF4J Rico leaves the choice of logging framework to the application.
+
+The Rico logging module extends the MDC (Mapped Diagnostic Context) with Rico and application specific information.
+In order to be able to use Rico logging the application must use a logging framework which supports MDC.
+At the time of writing this module only Logback and Log4j provide MDC support.
+
+Thus Rico logging can only be used if the application is using either Logback or Log4j.
